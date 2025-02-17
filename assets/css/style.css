@@ -10,7 +10,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  background: #0c0b09;
+  background: white;
   color: #fff;
 }
 
@@ -443,15 +443,37 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/g8.jpg") top center;
+  background: url("../img/Untitled\ design.png") no-repeat center center;
   background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   padding: 0;
 }
 
+/* Ensure proper scaling on mobile devices */
+@media (max-width: 1024px) {
+  #hero {
+    background: url("../img/cofee.jpg") no-repeat center center;
+
+    background-size: cover; /* Prevent excessive cropping */
+    background-attachment: scroll; /* Fix scrolling issue */
+  }
+}
+
+@media (max-width: 480px) {
+  #hero {
+    background: url("../img/cofee.jpg") no-repeat center center;
+    /* Reduce height further for very small screens */
+    background-size: cover; /* Maintain aspect ratio */
+  }
+}
+
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.5);
+  /* background: rgba(0, 0, 0, 0.6); */
   position: absolute;
   bottom: 0;
   top: 0;
@@ -1669,16 +1691,16 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: black;
+  background: #C4C4C4;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
 }
 
 #footer .footer-top {
-  background: #0c0b09;
-  border-top: 1px solid #37332a;
-  border-bottom: 1px solid #28251f;
+  background: #c4c4c4;
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
   padding: 60px 0 30px 0;
 }
 
@@ -1728,7 +1750,7 @@ section {
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: 600;
-  color: #fff;
+  color: black;
   position: relative;
   padding-bottom: 12px;
 }
@@ -1761,7 +1783,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a {
-  color: #fff;
+  color: black;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
@@ -1785,7 +1807,7 @@ section {
   padding: 4px;
   width: calc(100% - 110px);
   background: #28251f;
-  color: white;
+  color: BLACK;
 }
 
 #footer .footer-top .footer-newsletter form input[type="submit"] {
