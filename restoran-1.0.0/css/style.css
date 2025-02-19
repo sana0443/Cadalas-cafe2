@@ -551,11 +551,12 @@
 }
 
 .footer .copyright a {
-    color: var(--light);
+    color: white;
 }
 
 .footer .footer-menu a {
     margin-right: 15px;
+    color: white;
     padding-right: 15px;
     border-right: 1px solid rgba(255, 255, 255, .1);
 }
