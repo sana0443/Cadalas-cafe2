@@ -642,3 +642,127 @@
 .location a:hover {
     text-decoration: underline;
 }
+
+
+.gallery{
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    padding-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .gallery{
+    border: none !important;
+    margin: 0;              /* optionally remove default margin */
+    padding-top: 40px;
+  }
+
+  .gallery-sec{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+ 
+}
+
+.gallery-sec{
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.gallery img {
+    transition: transform 0.4s ease, box-shadow 0.4s ease; 
+    object-fit: cover; 
+    cursor: pointer;
+    height: 300px;
+    width: 80%;
+    border-radius: 10px;
+
+}
+
+.h3{
+    color: white;
+}
+
+
+.image-ticker-container {
+    position: relative;
+    width: 100%;
+    /* background-color: #c4c4c4; */
+    max-width: 100%; /* Optional for controlling container size */
+    overflow: hidden;
+    padding: 0 15px; /* Adjust padding to control side visibility */
+  }
+  
+  /* Ticker track */
+  .image-ticker {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  /* Images in the ticker */
+  .image-ticker-container2 .ticker-track img {
+    display: inline-block;
+    height: 250px; /* Adjust the size as needed */
+    margin: 0 6px; /* Spacing between images */
+    transition: transform 0.5s ease;
+    width: 250px;
+  }
+
+  .image-ticker-container3 .ticker-track img {
+    display: inline-block;
+    height: 250px; /* Adjust the size as needed */
+    margin: 0 6px;
+    width: 250px;
+    /* Spacing between images */
+    transition: transform 0.5s ease;
+  }
+  
+  
+  
+  /* Small screen styles */
+  @media (max-width: 768px) {
+    .image-ticker {
+        animation: ticker-scroll 10s linear infinite;
+    }
+  
+  
+    .image-ticker-container3 .ticker-track img {
+        height: 200px; /* Adjust for smaller screen sizes */
+    }
+    .image-ticker-container2 .ticker-track img {
+        height: 200px; /* Adjust for smaller screen sizes */
+    }
+   
+  }
+
+  .image-ticker-container3 .ticker-track {
+    display: inline-flex; /* Align images in a single row */
+    animation: scroll-rightzzz 65s linear infinite !important;
+  }
+  
+  
+  
+  @keyframes scroll-rightzzz {
+    0% {
+        transform: translateX(-50%); /* Start from the left */
+    }
+    100% {
+        transform: translateX(0); /* Move to the right */
+    }
+}
+
+
+
+
+
+
+
+
+
