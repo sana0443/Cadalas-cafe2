@@ -449,6 +449,11 @@
     transition: .5s;
 }
 
+.team h1{
+    color: #ed8e54;
+
+}
+
 .team-item img {
     transition: .5s;
 }
@@ -482,8 +487,8 @@
 }
 
 .testimonial-carousel .owl-item.center .testimonial-item {
-    background: var(--primary) !important;
-    border-color: var(--primary) !important;
+    /* background: var(--primary) !important; */
+    /* border-color: var(--primary) !important; */
 }
 
 .testimonial-carousel .owl-item.center .testimonial-item * {
@@ -999,7 +1004,6 @@ text-align: start;}
 
 
 .awards {
-    color: rgb(6, 155, 140);
     background-color: white;
 
 }
