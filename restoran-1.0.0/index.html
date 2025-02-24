@@ -14,8 +14,9 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
@@ -48,7 +49,7 @@
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-0 logo">
                     <!-- <h4 class="text-primary m-0"></i>kadalas</h4> -->
-                    <img src="img/logo.png" alt="Logo">
+                    <img src="img/logo2.png" alt="Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
@@ -66,292 +67,108 @@
                 </div>
             </nav>
 
-            <div class="container-xxl py-5 bg-dark hero-header mb-5">
-                <div class="container my-5 py-5">
-                    <div class="row align-items-center g-5">
-                        <div class="col-lg-6 text-center text-lg-start">
-                            <h1 class="display-3 text-white animated slideInLeft">Enjoy Our<br>Delicious Flavors</h1>
-                            <p class="text-white animated slideInLeft mb-4 pb-2">A place where beauty meets flavor—see it, feel it, taste it.</p>
-                            <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Menu</a>
+            <div class="">
+                <div class=" ">
+                    <div class="carousel-container">
+                        <div class="carousel-slide active" style="background-image: url('./img/u1.jpg');">
+                            <div class="text-overlay show-text">Explore the Beauty of Nature</div>
                         </div>
-                        <div class="col-lg-6 text-center text-lg-end overflow-hidden">
-                            <img class="img-fluid" src="img/Delicious_Chicken___Goat_Cheese_dish-removebg-preview.png" alt="">
+                        <div class="carousel-slide" style="background-image: url('./img/s3.jpg');">
+                            <div class="text-overlay">Discover Stunning Cityscapes</div>
+                        </div>
+                        <div class="carousel-dots">
+                            <div class="carousel-dot active" onclick="goToSlide(0)"></div>
+                            <div class="carousel-dot" onclick="goToSlide(1)"></div>
                         </div>
                     </div>
+                    
+                    
+               
                 </div>
             </div>
         </div>
-        <!-- Navbar & Hero End -->
 
-        <br/>
-        <!-- Service Start -->
-       
-        <div class="container-xxl py-5 pys">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h5 class="section-title ff-secondary text-center text-primary fw-normal">why kadalas cafe?</h5>
-                <h1 class="mb-5">Acheivements and specialities</h1>
+        <div class="flash-news-container">
+            <div class="flash-news-wrapper">
+                <div class="flash-news-item active">🎉 Special Offer: 50% Off on All Coffee Today! ☕</div>
+                <div class="flash-news-item">🌟 New Seasonal Menu Available Now! 🍽️</div>
+                <div class="flash-news-item">🎊 Happy Hours: Buy 1 Get 1 Free from 4-6 PM! 🍹</div>
             </div>
-            <div class="image-ticker-container">
-                <div class="image-ticker">
-                    <div class="ticker-track">
-                        <!-- Product 1 -->
-                        <picture>
-                          <!-- Modern format sources (WebP) for different resolutions -->
-                          <source
-                            type="image/jpg"
-                            srcset="
-                              img/a1.jpg 400w,
-                              img/a1.jpg 800w,
-                              img/a1.jpg 1200w
-                            "
-                            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
-                          />
-                          <!-- Fallback image (in case WebP is not supported) -->
-                          <img
-                            src="img/a1.jpg"
-                            alt="Product 1"
-                            loading="lazy"
-                            width="400"
-                            height="400"
-                          />
-                        </picture>
-                      
-                        <!-- Product 2 -->
-                        <picture>
-                          <source
-                          type="image/jpg"
-                          srcset="
-                            img/a2.jpg 400w,
-                            img/a2.jpg 800w,
-                            img/a2.jpg 1200w
-                          "
-                          sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
-                        />
-                          <img
-                            src="img/a2.jpg"
-                            alt="Product 2"
-                            loading="lazy"
-                            width="400"
-                            height="400"
-                          />
-                        </picture>
-                      
-                        <!-- Product 3 -->
-                        <picture>
-                          <source
-                          type="image/jpg"
-                          srcset="
-                            img/a3.jpg 400w,
-                            img/a3.jpg 800w,
-                            img/a3.jpg 1200w
-                          "
-                          sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
-                        />
-                          <img
-                            src="img/a3.jpg"
-                            alt="Product 3"
-                            loading="lazy"
-                            width="400"
-                            height="400"
-                          />
-                        </picture>
-                      
-                        <!-- Product 4 -->
-                        <picture>
-                          <source
-                            type="image/jpg"
-                            srcset="
-                              img/a1.jpg 400w,
-                              img/a1.jpg 800w,
-                              img/a1.jpg 1200w
-                            "
-                            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
-                          />
-                          <!-- Fallback image (in case WebP is not supported) -->
-                          <img
-                            src="img/a1.jpg"
-                            alt="Product 1"
-                            loading="lazy"
-                            width="400"
-                            height="400"
-                          />
-                        </picture>
-                      
-                        <!-- Product 5 -->
-                        <picture>
-                          <source
-                            type="image/jpg"
-                            srcset="
-                              img/a2.jpg 400w,
-                              img/a2.jpg 800w,
-                              img/a2.jpg 1200w
-                            "
-                            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
-                          />
-                          <!-- Fallback image (in case WebP is not supported) -->
-                          <img
-                            src="img/a2.jpg"
-                            alt="Product 1"
-                            loading="lazy"
-                            width="400"
-                            height="400"
-                          />
-                        </picture>
-                      
-                        <!-- Product 7 -->
-                        <picture>
-                          <source
-                            type="image/jpg"
-                            srcset="
-                              img/a3.jpg 400w,
-                              img/a3.jpg 800w,
-                              img/a3.jpg 1200w
-                            "
-                            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
-                          />
-                          <!-- Fallback image (in case WebP is not supported) -->
-                          <img
-                            src="img/a3.jpg"
-                            alt="Product 1"
-                            loading="lazy"
-                            width="400"
-                            height="400"
-                          />
-                        </picture>
-                        <picture>
-                            <!-- Modern format sources (WebP) for different resolutions -->
-                            <source
-                            type="image/jpg"
-                            srcset="
-                              img/a1.jpg 400w,
-                              img/a1.jpg 800w,
-                              img/a1.jpg 1200w
-                            "
-                            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
-                          />
-                          <!-- Fallback image (in case WebP is not supported) -->
-                          <img
-                            src="img/a1.jpg"
-                            alt="Product 1"
-                            loading="lazy"
-                            width="400"
-                            height="400"
-                          />
-                          </picture>
-                        
-                          <!-- Product 2 -->
-                          <picture>
-                            <source
-                            type="image/jpg"
-                            srcset="
-                              img/a2.jpg 400w,
-                              img/a2.jpg 800w,
-                              img/a2.jpg 1200w
-                            "
-                            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
-                          />
-                          <!-- Fallback image (in case WebP is not supported) -->
-                          <img
-                            src="img/a2.jpg"
-                            alt="Product 1"
-                            loading="lazy"
-                            width="400"
-                            height="400"
-                          />
-                          </picture>
-                        
-                          <!-- Product 3 -->
-                          <picture>
-                            <source
-                            type="image/jpg"
-                            srcset="
-                              img/a3.jpg 400w,
-                              img/a3.jpg 800w,
-                              img/a3.jpg 1200w
-                            "
-                            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
-                          />
-                          <!-- Fallback image (in case WebP is not supported) -->
-                          <img
-                            src="img/a3.jpg"
-                            alt="Product 1"
-                            loading="lazy"
-                            width="400"
-                            height="400"
-                          />
-                          </picture>
-                        
-                          <!-- Product 4 -->
-                          <picture>
-                            <source
-                            type="image/jpg"
-                            srcset="
-                              img/a1.jpg 400w,
-                              img/a1.jpg 800w,
-                              img/a1.jpg 1200w
-                            "
-                            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
-                          />
-                          <!-- Fallback image (in case WebP is not supported) -->
-                          <img
-                            src="img/a1.jpg"
-                            alt="Product 1"
-                            loading="lazy"
-                            width="400"
-                            height="400"
-                          />
-                          </picture>
-                        
-                          <!-- Product 5 -->
-                          <picture>
-                            <source
-                            type="image/jpg"
-                            srcset="
-                              img/a2.jpg 400w,
-                              img/a2.jpg 800w,
-                              img/a2.jpg 1200w
-                            "
-                            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
-                          />
-                          <!-- Fallback image (in case WebP is not supported) -->
-                          <img
-                            src="img/a2.jpg"
-                            alt="Product 1"
-                            loading="lazy"
-                            width="400"
-                            height="400"
-                          />
-                          </picture>
-                        
-                          <!-- Product 7 -->
-                          <picture>
-                            <source
-                            type="image/jpg"
-                            srcset="
-                              img/a3.jpg 400w,
-                              img/a3.jpg 800w,
-                              img/a3.jpg 1200w
-                            "
-                            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
-                          />
-                          <!-- Fallback image (in case WebP is not supported) -->
-                          <img
-                            src="img/a3.jpg"
-                            alt="Product 1"
-                            loading="lazy"
-                            width="400"
-                            height="400"
-                          />
-                          </picture>
-                      
-                        <!-- Repeat if you want more images in the ticker ... -->
-                      </div>
-                      
-                  </div>
-                </div>
-                </div>
-                <br/>
-            <div class="container">
+        </div>
+    
+        <script>
+         document.addEventListener("DOMContentLoaded", function () {
+    let newsIndex = 0;
+    let slideIndex = 0;
+
+    const newsItems = document.querySelectorAll(".flash-news-item");
+    const flashNewsContainer = document.querySelector(".flash-news-container");
+    const slides = document.querySelectorAll(".carousel-slide");
+    const texts = document.querySelectorAll(".text-overlay");
+    const dots = document.querySelectorAll(".carousel-dot");
+
+  
+    const backgroundColors = ["#7d7d7d", "#BF8A2E", "rgb(6, 155, 140)"];
+
+    function showNextNews() {
+        const currentItem = newsItems[newsIndex];
+        
+        // Move current item left and fade out
+        currentItem.classList.remove("active");
+        currentItem.classList.add("exit");
+
+        // Calculate next index
+        newsIndex = (newsIndex + 1) % newsItems.length;
+        const nextItem = newsItems[newsIndex];
+
+        // Ensure the previous item is fully transitioned out before the next enters
+        setTimeout(() => {
+            currentItem.classList.remove("exit"); // Reset exit state
+            nextItem.classList.add("active"); // Move next item into view
+            flashNewsContainer.style.backgroundColor = backgroundColors[newsIndex];
+        }, 500); // Wait for transition to finish
+    }
+
+
+    function changeSlide() {
+        slides[slideIndex].classList.remove("active");
+        texts[slideIndex].classList.remove("show-text");
+        dots[slideIndex].classList.remove("active");
+
+        slideIndex = (slideIndex + 1) % slides.length;
+
+        slides[slideIndex].classList.add("active");
+        texts[slideIndex].classList.add("show-text");
+        dots[slideIndex].classList.add("active");
+    }
+
+    function goToSlide(index) {
+        slides[slideIndex].classList.remove("active");
+        texts[slideIndex].classList.remove("show-text");
+        dots[slideIndex].classList.remove("active");
+
+        slideIndex = index;
+
+        slides[slideIndex].classList.add("active");
+        texts[slideIndex].classList.add("show-text");
+        dots[slideIndex].classList.add("active");
+    }
+
+    // Start intervals only if elements exist
+    if (newsItems.length > 0) {
+        setInterval(showNextNews, 3000);
+        flashNewsContainer.style.backgroundColor = backgroundColors[0]; // Set initial background color
+    }
+
+    if (slides.length > 0) setInterval(changeSlide, 2000);
+});
+
+        </script>
+        
+        
+        <!-- Service Start -->
+     
+            <!-- <div class="container">
                 <div class=" services row g-4">
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="service-item rounded pt-3">
@@ -390,45 +207,54 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
        
         <!-- Service End -->
 
+            <div class="about ">
+                <div class="row  align-items-center p-4 ">
+                    <div class="col-lg-6   ">
+                        <h2 class="position-relative ">OUR STORY</h2>
 
+                </div>
+                
+
+                <div class="col-lg-6  pys  ">
+                    <p>
+                      It is Kadalas that transformed the place into a space where everyone enjoys their own space.
+                            Kadalas, one of the popular sea-viewing cafes in Kerala situated at South Beach, has introduced a distinctive space to the cultural sphere of Calicut. The space is designed to become a subject that could interact with its guests. Its audience s privileged to opt for spaces in accordance with their mood. Over the course of time, it has been identified as the most popular gathering location in Calicut.
+                          
+                    </p>
+                    <hr class=" hr mt-4">
+
+            </div>
+
+                </div>
+            </div>
         <!-- About Start -->
-        <div class="container-xxl py-5 pys">
-            <div class="container">
-                <div class="row g-5 align-items-center">
+        <div class="  team">
+            <div class="">
+                <div class="row  align-items-center">
                     <div class="col-lg-6">
-                        <div class="row g-3">
-                            <div class="col-6 text-start">
-                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src="img/g4.jpg">
-                            </div>
-                            <div class="col-6 text-start">
-                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s" src="img/g1.jpg" style="margin-top: 25%;">
-                            </div>
-                            <div class="col-6 text-end">
-                                <img class="img-fluid rounded w-60 wow zoomIn" data-wow-delay="0.5s" src="img/g2.jpg">
-                            </div>
-                            <div class="col-6 text-end">
-                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src="img/g8.jpg">
-                            </div>
-                        </div>
+                            <img class="img-fluid    wow zoomIn" data-wow-delay="0.1s" src="img/team.jpg">
                     </div>
-                    <div class="col-lg-6">
-                        <h5 class="section-title ff-secondary text-start text-primary fw-normal">About Us</h5>
-                        <h1 class="mb-4">Welcome to <i class="fa fa-utensils text-primary me-2"></i>Kadalas Tasty Tales</h1>
-                        <p class="mb-4">Nestled by the serene waves and golden sands, Kadalas Cafe is your ultimate retreat, blending breathtaking ocean views with unforgettable culinary experiences. Whether you seek a tranquil seaside escape or a vibrant urban setting, we bring you the best of both worlds with our Sea View Cafe at Calicut Beach and Urban Cafe in Trivandrum.</p>
-                        <p class="mb-4">At Cadalas Sea View Cafe, the rhythmic melody of the waves sets the perfect backdrop for a leisurely morning coffee, a sumptuous seafood feast, or a peaceful sunset moment. With fresh, locally sourced ingredients and a menu inspired by coastal flavors, every bite is a celebration of the sea.
+                    <div class="col-lg-6 ">
+                        <br/>
+                        <div class="pe-4 border-end border-3 border-primary"></div>
 
+                        <h1 class=" p-4"> <i class=" text-primary"></i>OUR TEAM</h1>
+                        <p class="mb-4 p-4 ">
+                            Strategic and critical thinking of the Managing Director, Ahammed Shihab 
+                            and the solemn support of three partners, namely Abdul Haseeb, Suhas 
+                            Ahamed and Muhammed Shahin, smoothened the trajectory of Kadalas. 
+                            His entrepreneurial skills are sharpened by his experience handling multiple 
+                            restaurant franchises from around the globe for a Qatar-based MNC. His 
+                            partners also bring rich experience from FMCG industry and instill energy 
+                            for the course. This is resultant in developing a strong team as well.
                         </p>
-                        <p class="mb-4">For those who thrive in the heart of the city,<span class="bold"> Kadalas Urban Cafe in Trivandrum</span> offers a modern, cozy ambiance where great food meets lively conversations. Whether you’re stopping by for a quick coffee break, a business lunch, or an evening unwind, our urban space brings the same warmth and excellence that define Cadalas..
-
-                        </p>
-                        <p class="mb-4">From the tranquil shores of <span class="bold">Kadalas Sea view cafe in Calicut Beach </span>, Kadalas Cafe welcomes you to experience the perfect harmony of relaxation, indulgence, and culinary artistry.
-
-                        </p>
-                        <div class="row g-4 mb-4">
+                        <img src="img/logo.png" class="logo2">
+                       
+                        <!-- <div class="row g-4 mb-4">
                             <div class="col-sm-6">
                                 <div class="d-flex align-items-center border-start border-5 border-primary px-3">
                                     <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">15</h1>
@@ -447,13 +273,253 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
+                        </div> -->
                     </div>
              
                 </div>
             </div>
         </div>
+          
+        <div class="awards pyx ">
+            <div class=" sections text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h5 class="section-title ff-secondary text-center mb-4  fw-normal">WHY KADALAS CAFE ?</h5>
+                <!-- <h1 class="mb-5">Acheivements and specialities</h1> -->
+            </div>
+            <div class="image-ticker-container">
+                <div class="image-ticker">
+                    <div class="ticker-track">
+                        <picture>
+                          <source
+                            type="image/jpg"
+                            srcset="
+                              img/a1.jpg 400w,
+                              img/a1.jpg 800w,
+                              img/a1.jpg 1200w
+                            "
+                            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
+                          />
+                          <img
+                            src="img/a1.jpg"
+                            alt="Product 1"
+                            loading="lazy"
+                            width="400"
+                            height="400"
+                          />
+                        </picture>
+                      
+                        <picture>
+                          <source
+                          type="image/jpg"
+                          srcset="
+                            img/a2.jpg 400w,
+                            img/a2.jpg 800w,
+                            img/a2.jpg 1200w
+                          "
+                          sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
+                        />
+                          <img
+                            src="img/a2.jpg"
+                            alt="Product 2"
+                            loading="lazy"
+                            width="400"
+                            height="400"
+                          />
+                        </picture>
+                      
+                        <picture>
+                          <source
+                          type="image/jpg"
+                          srcset="
+                            img/a3.jpg 400w,
+                            img/a3.jpg 800w,
+                            img/a3.jpg 1200w
+                          "
+                          sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
+                        />
+                          <img
+                            src="img/a3.jpg"
+                            alt="Product 3"
+                            loading="lazy"
+                            width="400"
+                            height="400"
+                          />
+                        </picture>
+                      
+                        <picture>
+                          <source
+                            type="image/jpg"
+                            srcset="
+                              img/a1.jpg 400w,
+                              img/a1.jpg 800w,
+                              img/a1.jpg 1200w
+                            "
+                            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
+                          />
+                          <img
+                            src="img/a1.jpg"
+                            alt="Product 1"
+                            loading="lazy"
+                            width="400"
+                            height="400"
+                          />
+                        </picture>
+                      
+                        <picture>
+                          <source
+                            type="image/jpg"
+                            srcset="
+                              img/a2.jpg 400w,
+                              img/a2.jpg 800w,
+                              img/a2.jpg 1200w
+                            "
+                            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
+                          />
+                          <img
+                            src="img/a2.jpg"
+                            alt="Product 1"
+                            loading="lazy"
+                            width="400"
+                            height="400"
+                          />
+                        </picture>
+                      
+                        <picture>
+                          <source
+                            type="image/jpg"
+                            srcset="
+                              img/a3.jpg 400w,
+                              img/a3.jpg 800w,
+                              img/a3.jpg 1200w
+                            "
+                            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
+                          />
+                          <img
+                            src="img/a3.jpg"
+                            alt="Product 1"
+                            loading="lazy"
+                            width="400"
+                            height="400"
+                          />
+                        </picture>
+                        <picture>
+                            <source
+                            type="image/jpg"
+                            srcset="
+                              img/a1.jpg 400w,
+                              img/a1.jpg 800w,
+                              img/a1.jpg 1200w
+                            "
+                            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
+                          />
+                          <img
+                            src="img/a1.jpg"
+                            alt="Product 1"
+                            loading="lazy"
+                            width="400"
+                            height="400"
+                          />
+                          </picture>
+                        
+                          <picture>
+                            <source
+                            type="image/jpg"
+                            srcset="
+                              img/a2.jpg 400w,
+                              img/a2.jpg 800w,
+                              img/a2.jpg 1200w
+                            "
+                            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
+                          />
+                          <img
+                            src="img/a2.jpg"
+                            alt="Product 1"
+                            loading="lazy"
+                            width="400"
+                            height="400"
+                          />
+                          </picture>
+                        
+                          <picture>
+                            <source
+                            type="image/jpg"
+                            srcset="
+                              img/a3.jpg 400w,
+                              img/a3.jpg 800w,
+                              img/a3.jpg 1200w
+                            "
+                            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
+                          />
+                          <img
+                            src="img/a3.jpg"
+                            alt="Product 1"
+                            loading="lazy"
+                            width="400"
+                            height="400"
+                          />
+                          </picture>
+                        
+                          <picture>
+                            <source
+                            type="image/jpg"
+                            srcset="
+                              img/a1.jpg 400w,
+                              img/a1.jpg 800w,
+                              img/a1.jpg 1200w
+                            "
+                            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
+                          />
+                          <img
+                            src="img/a1.jpg"
+                            alt="Product 1"
+                            loading="lazy"
+                            width="400"
+                            height="400"
+                          />
+                          </picture>
+                        
+                          <picture>
+                            <source
+                            type="image/jpg"
+                            srcset="
+                              img/a2.jpg 400w,
+                              img/a2.jpg 800w,
+                              img/a2.jpg 1200w
+                            "
+                            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
+                          />
+                          <img
+                            src="img/a2.jpg"
+                            alt="Product 1"
+                            loading="lazy"
+                            width="400"
+                            height="400"
+                          />
+                          </picture>
+                        
+                          <picture>
+                            <source
+                            type="image/jpg"
+                            srcset="
+                              img/a3.jpg 400w,
+                              img/a3.jpg 800w,
+                              img/a3.jpg 1200w
+                            "
+                            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
+                          />
+                          <img
+                            src="img/a3.jpg"
+                            alt="Product 1"
+                            loading="lazy"
+                            width="400"
+                            height="400"
+                          />
+                          </picture>
+                      
+                      </div>
+                      
+                  </div>
+                </div>
+                </div>
         <!-- About End -->
 
 
@@ -801,13 +867,75 @@
         </div> -->
         <!-- Menu End -->
 
+        <div class="  team">
+            <div class="">
+                <div class="row  align-items-center">
+                  
+                    <div class="col-lg-6 ">
+                        <br/>
+                        <div class="pe-4 border-end border-3 border-primary"></div>
 
+                        <h1 class=" p-4"> <i class=" text-primary"></i>OUR OUTLETS</h1>
+                        <p class="mb-4 p-4 ">
+                            Strategic and critical thinking of the Managing Director, Ahammed Shihab 
+                            and the solemn support of three partners, namely Abdul Haseeb, Suhas 
+                            Ahamed and Muhammed Shahin, smoothened the trajectory of Kadalas. 
+                            His entrepreneurial skills are sharpened by his experience handling multiple 
+                            restaurant franchises from around the globe for a Qatar-based MNC. His 
+                            partners also bring rich experience from FMCG industry and instill energy 
+                            for the course. This is resultant in developing a strong team as well.
+                        </p>
+                       <button>
+                        Kozhikode
+                       </button>
+                       <button>
+                        Thiruvanandhapuram
+                       </button>
+                        <!-- <div class="row g-4 mb-4">
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">15</h1>
+                                    <div class="ps-4">
+                                        <p class="mb-0">Years of</p>
+                                        <h6 class="text-uppercase mb-0">Experience</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">50</h1>
+                                    <div class="ps-4">
+                                        <p class="mb-0">Popular</p>
+                                        <h6 class="text-uppercase mb-0">Master Chefs</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row outlets position-relative">
+                            <img src="img/g8.jpg" class="img-fluid">
+                            <p class="location">
+                                <a href="https://maps.app.goo.gl/DV22MqZskQLC1QJAA" target="_blank">KOZHIKODE📍</a>
+                            </p>
+                        </div>
+                        <div class="row outlets position-relative">
+                            <img src="img/u1.jpg" class="img-fluid">
+                            <p class="location">
+                                <a href="https://maps.app.goo.gl/QjSvUjsvx2sFKHi78" target="_blank">THIRUVANATHAPURAM📍</a>
+                            </p>
+                        </div>
+                    </div>
+                    
+             
+                </div>
+            </div>
+        </div>
       
 
-        <div class="container-xxl pt-5 pb-3 pys cafes">
+        <!-- <div class="container-xxl pt-5 pb-3 pys cafes">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h5 class="section-title ff-secondary text-center text-primary fw-normal">Our outlets</h5>
-                <h1 class="mb-5">Sea view Cafe and Urban Cafe</h1>
             </div>
             <div class="container">
                 <div class="row">
@@ -849,12 +977,11 @@
 
     </div>
 
-   </div>
+   </div> -->
 
    <div class="container-xxl pt-5 pb-3 pys cafes">
     <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
         <h5 class="section-title ff-secondary text-center text-primary fw-normal">food gallery</h5>
-        <h1 class="mb-5">Our Specials</h1>
     </div>
    <div class="image-ticker-container2">
     <div class="image-ticker">
