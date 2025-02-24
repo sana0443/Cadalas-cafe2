@@ -645,8 +645,10 @@
 }
 
 .outlets {
-    position: relative; /* Allows absolute positioning of child elements */
-    display: inline-block;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .location {
