@@ -236,7 +236,7 @@
   }
 
   .footer{
-    background-color: #525050;
+    background-color: #efeeee;
   }
   .image-ticker {
     overflow: hidden; /* Hide overflowing content */
@@ -527,7 +527,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--light);
+    color: #666565;
     border: 1px solid #FFFFFF;
     border-radius: 35px;
     transition: .3s;
@@ -542,7 +542,7 @@
     margin-bottom: 5px;
     padding: 0;
     text-align: left;
-    color: #FFFFFF;
+    color: #666565;
     font-size: 15px;
     font-weight: normal;
     text-transform: capitalize;
@@ -569,12 +569,12 @@
 }
 
 .footer .copyright a {
-    color: white;
+    color: #666565;
 }
 
 .footer .footer-menu a {
     margin-right: 15px;
-    color: white;
+    color: #666565;
     padding-right: 15px;
     border-right: 1px solid rgba(255, 255, 255, .1);
 }
@@ -957,7 +957,7 @@ text-align: start;}
 }
 
 .outlets-main{
-    background-color: #d5d4d4 ;
+    /* background-color: #d5d4d4 ; */
     padding-bottom: 60px;
 
 }
