@@ -543,7 +543,7 @@
 
 /* Active dot */
 .carousel-dot.active {
-    background: white;
+    background: white !important;
     transform: scale(1.2);
 }
 
