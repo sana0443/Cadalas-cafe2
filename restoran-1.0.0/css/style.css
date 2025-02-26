@@ -176,13 +176,7 @@
 
 
 
-.image-ticker-container {
-    position: relative;
-    width: 100%;
-    /* background-color: #c4c4c4; */
-    max-width: 100%; /* Optional for controlling container size */
-    overflow: hidden;
-  }
+
 
   .pyx{
     padding-bottom: 50px;
@@ -191,25 +185,7 @@
 
   }
 
-  
-  /* Ticker track */
-  .image-ticker {
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-  }
-  
-  /* Images in the ticker */
-  .ticker-track img {
-    display: inline-block;
-    height: 350px;
-    width: 300px; /* Adjust the size as needed */
-    margin: 0 6px; /* Spacing between images */
-    transition: transform 0.5s ease;
-  }
-  
+
   
   
   /* Small screen styles */
@@ -479,44 +455,79 @@
     width: 100%;
 }
 
-
-/*** Testimonial ***/
-.testimonial-carousel .owl-item .testimonial-item,
-.testimonial-carousel .owl-item.center .testimonial-item * {
-    transition: .5s;
-}
-
-.testimonial-carousel .owl-item.center .testimonial-item {
-    /* background: var(--primary) !important; */
-    /* border-color: var(--primary) !important; */
-}
-
-.testimonial-carousel .owl-item.center .testimonial-item * {
-    color: var(--light) !important;
-}
-
-.testimonial-carousel .owl-dots {
-    margin-top: 24px;
+/*** Testimonial Section ***/
+.testimonial-carousel {
     display: flex;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.testimonial-item {
+    background: #fff;
+    border: 2px solid #edd160;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.testimonial-item:hover {
+    transform: scale(1.05);
+}
+
+.testimonial-item i {
+    color: #edd160;
+}
+
+.testimonial-item p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.testimonial-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #edd160;
+    object-fit: cover;
+}
+
+.testimonial-item h5 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.testimonial-item small {
+    color: #777;
+    font-size: 14px;
+}
+
+/* Owl Carousel Dots */
+.testimonial-carousel .owl-dots {
+    margin-top: 20px;
+    display: flex;
     justify-content: center;
 }
 
 .testimonial-carousel .owl-dot {
-    position: relative;
-    display: inline-block;
+    width: 12px;
+    height: 12px;
     margin: 0 5px;
-    width: 15px;
-    height: 15px;
-    border: 1px solid #CCCCCC;
-    border-radius: 15px;
-    transition: .5s;
+    border-radius: 50%;
+    background: #ccc;
+    transition: background 0.3s ease-in-out;
 }
 
 .testimonial-carousel .owl-dot.active {
-    background: var(--primary);
-    border-color: var(--primary);
+    background: #edd160;
 }
+
 
 
 /*** Footer ***/
@@ -644,35 +655,8 @@
     margin-bottom: 0; /* Remove extra space below */
 }
 
-.outlets {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.location {
-    position: absolute;
-    top: 10px; /* Adjust to place at the top of the image */
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-weight: bold;
-    z-index: 10;
-    text-align: center;
-}
 
-.location a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.location a:hover {
-    text-decoration: underline;
-}
 
 
 .gallery{
@@ -1009,42 +993,73 @@ text-align: start;}
     background-color: white;
 
 }
-.outlets{
-    /* width: 100%; */
-    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
-    /* padding: 10px; */
-    overflow: hidden; /* Ensures no overflow issues */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+
+
+.overlay-button:hover {
+    background: rgba(6, 155, 140, 0.9);
+}
+
+
+.outlets {
     position: relative;
-}
-.outlets img{
-    height: 400px;
-    object-fit: cover;
     width: 100%;
-
+    overflow: hidden;
 }
 
-.outlets::before {
-    content: ""; 
+.outlets img {
+    width: 100%;
+    height: 400px;
+    display: block;
+}
+
+/* Overlay covering the whole image - ALWAYS VISIBLE */
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    transition: opacity 0.3s ease-in-out;
-    cursor: pointer;
-    overflow: hidden;
+    background: rgba(0, 0, 0, 0.5); /* Dark transparent overlay */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
-.team button{
-    padding: 10px;
-    background-color:rgb(6, 155, 140) ;
+
+/* Location text styling */
+.location a {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Button Styling */
+.overlay-button {
+    background: rgb(6, 155, 140);
     color: white;
     border: none;
-    margin: 0 10px;
-    margin-left: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    /* border-radius: 5px; */
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s ease-in-out;
 }
+
+/* 
+.overlay-button:hover {
+    background: rgba(6, 155, 140, 0.9);
+} */
+
+
+.community h1{
+    color: #97d67c;
+}
+
 
 
 
