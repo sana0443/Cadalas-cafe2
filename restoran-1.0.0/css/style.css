@@ -456,6 +456,10 @@
 }
 
 /*** Testimonial Section ***/
+
+.testimonials{
+    overflow: hidden;
+}
 .testimonial-carousel {
     display: flex;
     justify-content: center;
@@ -708,7 +712,11 @@
 
 .community{
     background-color: #efeeee !important;
+    overflow: hidden;
 
+}
+.main{
+    overflow: hidden;
 }
   
   /* Images in the ticker */
@@ -942,7 +950,7 @@ text-align: start;}
 
 .team{
     background-color: #efeeee;
-    
+    overflow: hidden;
 
 }
 
@@ -960,6 +968,7 @@ text-align: start;}
     background-color: #efeeee;
     padding-left: 130px;
     padding-right: 70px;
+    overflow: hidden;
 
 }
 
@@ -998,6 +1007,7 @@ text-align: start;}
 .awards {
     background-color: white;
     text-align: center;
+    overflow: hidden;
 
 }
 
@@ -1011,6 +1021,7 @@ text-align: start;}
 .outlets {
     position: relative;
     width: 100%;
+    overflow: hidden;
     overflow: hidden;
 }
 
@@ -1066,6 +1077,11 @@ text-align: start;}
 
 h1{
  font-size: 1.7rem;
+}
+
+.followers{
+    background-color: white;
+    text-align: center;
 }
 
 
