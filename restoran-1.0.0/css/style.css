@@ -799,9 +799,9 @@ h1{
  font-size: 1.7rem;
 }
 
-.followers{
-    background-color: white;
+.followers h3{
     text-align: center;
+    font-weight: 600;
 }
 
 /*** Button ***/
