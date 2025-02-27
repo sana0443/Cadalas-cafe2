@@ -84,6 +84,13 @@
     overflow: hidden;
 }
 
+.sub-container {
+    position: relative;
+    width: 100%;
+    height: 45vh; /* Full height */
+    overflow: hidden;
+}
+
 .carousel-slide {
     position: absolute;
     width: 100%;
@@ -229,7 +236,7 @@
     transition: .5s;
 }
 
-.team h1{
+.team h1,.moments h1{
     color: #ed8e54;
 
 }
@@ -288,7 +295,9 @@
 .testimonial-item i {
     color: #edd160;
 }
-
+.location h1{
+    color: #edd160;
+}
 .testimonial-item p {
     font-size: 16px;
     color: #555;
@@ -413,7 +422,7 @@
 }
 
 
-.community{
+.community,.moments{
     background-color: #efeeee !important;
     overflow: hidden;
 
@@ -650,7 +659,7 @@ text-align: start;}
     opacity: 1;
 }
 
-.team{
+.team {
     background-color: #efeeee;
     overflow: hidden;
 
@@ -717,6 +726,12 @@ text-align: start;}
 
 .overlay-button:hover {
     background: rgba(6, 155, 140, 0.9);
+}
+.c-space h1{
+    color:rgba(6, 155, 140, 0.9) ;
+}
+.c-drink img{
+    width: 50%;
 }
 
 
