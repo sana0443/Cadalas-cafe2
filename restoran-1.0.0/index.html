@@ -281,44 +281,72 @@
         <!-- About End -->
 
 
-
-        <div class="  team pyx ">
-                <div class="row align-items-center text-center ">
-                    <h1 class="mb-5 " style="color: rgb(6, 155, 140);">LOCATIONS</h1>
-            
-                    <div class="col-lg-6 position-relative">
-                        <div class="outlets">
-                            <img src="img/g8.jpg" class="img-fluid">
-                            <div class="overlay">
-                            
-                               <a href="seaview.html" style="text-transform: lowercase;">
+<!-- 
+        <div class="team pyx">
+            <div class="row align-items-center text-center">
+                <h1 class="mb-5" style="color: rgb(6, 155, 140);">LOCATIONS</h1>
+        
+                <div class="col-lg-6">
+                    <div class="outlets">
+                            <a href="seaview.html" style="text-transform: lowercase;">
                                 <button class="overlay-button">Kozhikode</button>
-                               </a>
-                                <br/>
-                                <p class="location">
-                                    <a href="https://maps.app.goo.gl/DV22MqZskQLC1QJAA" target="_blank">KOZHIKODE📍</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-            
-                    <div class="col-lg-6 position-relative">
-                        <div class="outlets">
-                            <img src="img/u1.jpg" class="img-fluid">
-                            <div class="overlay">
-                                
-                                <a href="urban.html"style="text-transform: lowercase;"><button class="overlay-button">Thiruvananthapuram</button></a>
-                                <br/>
-
-                                <p class="location">
-                                    <a href="https://maps.app.goo.gl/QjSvUjsvx2sFKHi78" target="_blank">THIRUVANANTHAPURAM📍</a>
-                                </p>
-                            </div>
-                        </div>
+                            </a>
+                            <br/>
+                            <p class="location">
+                                <a href="https://maps.app.goo.gl/DV22MqZskQLC1QJAA" target="_blank">KOZHIKODE📍</a>
+                            </p>
                     </div>
                 </div>
-            
+        
+                <div class="col-lg-6">
+                    <div class="outlets">
+                            <a href="urban.html" style="text-transform: lowercase;">
+                                <button class="overlay-button">Thiruvananthapuram</button>
+                            </a>
+                            <br/>
+                            <p class="location">
+                                <a href="https://maps.app.goo.gl/QjSvUjsvx2sFKHi78" target="_blank">THIRUVANANTHAPURAM📍</a>
+                            </p>
+                        </div>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="team pyx">
+            <div class="container">
+                <div class="row align-items-center text-center ">
+                    <h1 class="mb-5 w-100" style="color: rgb(6, 155, 140);">LOCATIONS</h1>
+        
+                    <div class="col-6 col-md-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d1261289.035260063!2d75.10887073802958!3d11.01587363667175!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3ba659034bee8a53%3A0xfa3927fdea36d3a4!2sSouth%20Beach%2C%20Kuttichira%2C%20Kozhikode%2C%20Kerala%20673001!3m2!1d11.248301699999999!2d75.7725249!5e0!3m2!1sen!2sin!4v1740238847701!5m2!1sen!2sin" 
+                        width="100%" height="100px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+        
+                    <div class="col-6 col-md-6 text-md-start text-start">
+                        <a href="seaview.html" style="text-transform: lowercase;">
+                            <button class="overlay-button">Kozhikode</button>
+                        </a>
+                        <p>Contact - 34567345634</p>
+                    </div>
+               
+
+                    <div class="col-6 col-md-6" style="margin-top: 20px;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d1261289.035260063!2d75.10887073802958!3d11.01587363667175!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3ba659034bee8a53%3A0xfa3927fdea36d3a4!2sSouth%20Beach%2C%20Kuttichira%2C%20Kozhikode%2C%20Kerala%20673001!3m2!1d11.248301699999999!2d75.7725249!5e0!3m2!1sen!2sin!4v1740238847701!5m2!1sen!2sin" 
+                        width="100%" height="100px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+        
+                    <div class="col-6 col-md-6 text-md-start text-start">
+                        <a href="seaview.html" style="text-transform: lowercase;">
+                            <button class="overlay-button">Thiruvananthapuram</button>
+                        </a>
+                        <p>Contact - 34567345634</p>
+                    </div>
+                </div>
+            </div>
         </div>
+        
+        
+        
         <div class="wave">
             <img src="./img/Untitled design (2).png"/>
 
@@ -404,15 +432,51 @@
     <div class="text-center community">
         <h1 class="section-title mb-5 text-center  fw-normal">COMMUNITY</h1>
     </div>
-    <!-- <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-        <h5 class="section-title ff-secondary text-center text-primary fw-normal">food gallery</h5>
-    </div> -->
-   <div class="image-ticker-container2 mb-2">
+    <div id="communityCarousel" class="community-carousel">
+        <button class="carousel-control-prev" onclick="scrollCarousel(-1)">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+    
+        <div class="community-image-container">
+            <img src="./img/s3.jpg" class="img-fluid" />
+            <img src="./img/s3.jpg" class="img-fluid" />
+            <img src="./img/s3.jpg" class="img-fluid" />
+            <img src="./img/s2.jpg" class="img-fluid" />
+            <img src="./img/s2.jpg" class="img-fluid" />
+            <img src="./img/s2.jpg" class="img-fluid" />
+            <img src="./img/s1.jpg" class="img-fluid" />
+            <img src="./img/s1.jpg" class="img-fluid" />
+            <img src="./img/s1.jpg" class="img-fluid" />
+        </div>
+    
+        <button class="carousel-control-next" onclick="scrollCarousel(1)">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    
+    <script>
+        const container = document.querySelector('.community-image-container');
+    
+        function scrollCarousel(direction) {
+            const scrollAmount = container.clientWidth / 2; // Scroll half the container width
+            container.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+        }
+    
+        function autoScroll() {
+            if (container.scrollLeft + container.clientWidth >= container.scrollWidth) {
+                container.scrollLeft = 0; // Reset to start
+            } else {
+                container.scrollBy({ left: container.clientWidth / 2, behavior: 'smooth' });
+            }
+        }
+    
+        setInterval(autoScroll, 3000); // Auto-scroll every 3 seconds
+    </script>
+    
+   <!-- <div class="image-ticker-container2 mb-2">
     <div class="image-ticker">
         <div class="ticker-track">
-            <!-- Product 1 -->
             <picture>
-              <!-- Modern format sources (WebP) for different resolutions -->
               <source
                 type="image/jpg"
                 srcset="
@@ -422,7 +486,6 @@
                 "
                 sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
               />
-              <!-- Fallback image (in case WebP is not supported) -->
               <img
                 src="img/s2.jpg"
                 alt="Product 1"
@@ -432,7 +495,6 @@
               />
             </picture>
           
-            <!-- Product 2 -->
             <picture>
               <source
               type="image/jpg"
@@ -452,7 +514,6 @@
               />
             </picture>
           
-            <!-- Product 3 -->
             <picture>
               <source
               type="image/jpg"
@@ -472,7 +533,6 @@
               />
             </picture>
           
-            <!-- Product 4 -->
             <picture>
               <source
                 type="image/jpg"
@@ -483,7 +543,6 @@
                 "
                 sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
               />
-              <!-- Fallback image (in case WebP is not supported) -->
               <img
                 src="img/s9.jpg"
                 alt="Product 1"
@@ -493,7 +552,6 @@
               />
             </picture>
           
-            <!-- Product 5 -->
             <picture>
               <source
                 type="image/jpg"
@@ -504,7 +562,6 @@
                 "
                 sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
               />
-              <!-- Fallback image (in case WebP is not supported) -->
               <img
                 src="img/s1.jpg"
                 alt="Product 1"
@@ -514,7 +571,6 @@
               />
             </picture>
           
-            <!-- Product 7 -->
             <picture>
               <source
                 type="image/jpg"
@@ -525,7 +581,6 @@
                 "
                 sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
               />
-              <!-- Fallback image (in case WebP is not supported) -->
               <img
                 src="img/s2.jpg"
                 alt="Product 1"
@@ -535,8 +590,7 @@
               />
             </picture>
             <picture>
-                <!-- Modern format sources (WebP) for different resolutions -->
-                <source
+                  <source
                 type="image/jpg"
                 srcset="
                   img/s3.jpg 400w,
@@ -545,7 +599,6 @@
                 "
                 sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
               />
-              <!-- Fallback image (in case WebP is not supported) -->
               <img
                 src="img/s3.jpg"
                 alt="Product 1"
@@ -555,7 +608,6 @@
               />
               </picture>
             
-              <!-- Product 2 -->
               <picture>
                 <source
                 type="image/jpg"
@@ -566,7 +618,6 @@
                 "
                 sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
               />
-              <!-- Fallback image (in case WebP is not supported) -->
               <img
                 src="img/s4.jpg"
                 alt="Product 1"
@@ -576,7 +627,6 @@
               />
               </picture>
             
-              <!-- Product 3 -->
               <picture>
                 <source
                 type="image/jpg"
@@ -587,7 +637,6 @@
                 "
                 sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
               />
-              <!-- Fallback image (in case WebP is not supported) -->
               <img
                 src="img/s5.jpg"
                 alt="Product 1"
@@ -597,7 +646,6 @@
               />
               </picture>
             
-              <!-- Product 4 -->
               <picture>
                 <source
                 type="image/jpg"
@@ -608,7 +656,6 @@
                 "
                 sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
               />
-              <!-- Fallback image (in case WebP is not supported) -->
               <img
                 src="img/s9.jpg"
                 alt="Product 1"
@@ -618,7 +665,6 @@
               />
               </picture>
             
-              <!-- Product 5 -->
               <picture>
                 <source
                 type="image/jpg"
@@ -629,7 +675,6 @@
                 "
                 sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
               />
-              <!-- Fallback image (in case WebP is not supported) -->
               <img
                 src="img/s1.jpg"
                 alt="Product 1"
@@ -639,7 +684,6 @@
               />
               </picture>
             
-              <!-- Product 7 -->
               <picture>
                 <source
                 type="image/jpg"
@@ -650,7 +694,6 @@
                 "
                 sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
               />
-              <!-- Fallback image (in case WebP is not supported) -->
               <img
                 src="img/s2.jpg"
                 alt="Product 1"
@@ -660,19 +703,16 @@
               />
               </picture>
           
-            <!-- Repeat if you want more images in the ticker ... -->
           </div>
           
       </div>
-    </div>
+    </div> -->
 
-      <div class="image-ticker-container3">
+      <!-- <div class="image-ticker-container3">
         <div class="image-ticker">
             <div class="ticker-track">
-                <!-- Product 1 -->
-                <picture>
-                  <!-- Modern format sources (WebP) for different resolutions -->
-                  <source
+                    <picture>
+                      <source
                     type="image/jpg"
                     srcset="
                       img/s11.jpg 400w,
@@ -681,8 +721,7 @@
                     "
                     sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
                   />
-                  <!-- Fallback image (in case WebP is not supported) -->
-                  <img
+                      <img
                     src="img/s11.jpg"
                     alt="Product 1"
                     loading="lazy"
@@ -691,8 +730,7 @@
                   />
                 </picture>
               
-                <!-- Product 2 -->
-                <picture>
+                  <picture>
                   <source
                   type="image/jpg"
                   srcset="
@@ -711,8 +749,7 @@
                   />
                 </picture>
               
-                <!-- Product 3 -->
-                <picture>
+                  <picture>
                   <source
                   type="image/jpg"
                   srcset="
@@ -731,8 +768,7 @@
                   />
                 </picture>
               
-                <!-- Product 4 -->
-                <picture>
+                  <picture>
                   <source
                     type="image/jpg"
                     srcset="
@@ -742,8 +778,7 @@
                     "
                     sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
                   />
-                  <!-- Fallback image (in case WebP is not supported) -->
-                  <img
+                      <img
                     src="img/u2.jpg"
                     alt="Product 1"
                     loading="lazy"
@@ -752,8 +787,7 @@
                   />
                 </picture>
               
-                <!-- Product 5 -->
-                <picture>
+                  <picture>
                   <source
                     type="image/jpg"
                     srcset="
@@ -763,8 +797,7 @@
                     "
                     sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
                   />
-                  <!-- Fallback image (in case WebP is not supported) -->
-                  <img
+                      <img
                     src="img/u3.jpg"
                     alt="Product 1"
                     loading="lazy"
@@ -773,8 +806,7 @@
                   />
                 </picture>
               
-                <!-- Product 7 -->
-                <picture>
+                  <picture>
                   <source
                     type="image/jpg"
                     srcset="
@@ -784,8 +816,7 @@
                     "
                     sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
                   />
-                  <!-- Fallback image (in case WebP is not supported) -->
-                  <img
+                      <img
                     src="img/u4.jpg"
                     alt="Product 1"
                     loading="lazy"
@@ -794,8 +825,7 @@
                   />
                 </picture>
                 <picture>
-                    <!-- Modern format sources (WebP) for different resolutions -->
-                    <source
+                          <source
                     type="image/jpg"
                     srcset="
                       img/s11.jpg 400w,
@@ -804,8 +834,7 @@
                     "
                     sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
                   />
-                  <!-- Fallback image (in case WebP is not supported) -->
-                  <img
+                      <img
                     src="img/s11.jpg"
                     alt="Product 1"
                     loading="lazy"
@@ -814,8 +843,7 @@
                   />
                   </picture>
                 
-                  <!-- Product 2 -->
-                  <picture>
+                      <picture>
                     <source
                     type="image/jpg"
                     srcset="
@@ -825,8 +853,7 @@
                     "
                     sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
                   />
-                  <!-- Fallback image (in case WebP is not supported) -->
-                  <img
+                      <img
                     src="img/s12.jpg"
                     alt="Product 1"
                     loading="lazy"
@@ -835,8 +862,7 @@
                   />
                   </picture>
                 
-                  <!-- Product 3 -->
-                  <picture>
+                      <picture>
                     <source
                     type="image/jpg"
                     srcset="
@@ -846,8 +872,7 @@
                     "
                     sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
                   />
-                  <!-- Fallback image (in case WebP is not supported) -->
-                  <img
+                      <img
                     src="img/u1.jpg"
                     alt="Product 1"
                     loading="lazy"
@@ -856,8 +881,7 @@
                   />
                   </picture>
                 
-                  <!-- Product 4 -->
-                  <picture>
+                      <picture>
                     <source
                     type="image/jpg"
                     srcset="
@@ -867,8 +891,7 @@
                     "
                     sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
                   />
-                  <!-- Fallback image (in case WebP is not supported) -->
-                  <img
+                      <img
                     src="img/u2.jpg"
                     alt="Product 1"
                     loading="lazy"
@@ -877,8 +900,7 @@
                   />
                   </picture>
                 
-                  <!-- Product 5 -->
-                  <picture>
+                      <picture>
                     <source
                     type="image/jpg"
                     srcset="
@@ -888,8 +910,7 @@
                     "
                     sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
                   />
-                  <!-- Fallback image (in case WebP is not supported) -->
-                  <img
+                      <img
                     src="img/u2.jpg"
                     alt="Product 1"
                     loading="lazy"
@@ -898,8 +919,7 @@
                   />
                   </picture>
                 
-                  <!-- Product 7 -->
-                  <picture>
+                      <picture>
                     <source
                     type="image/jpg"
                     srcset="
@@ -909,8 +929,7 @@
                     "
                     sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
                   />
-                  <!-- Fallback image (in case WebP is not supported) -->
-                  <img
+                      <img
                     src="img/u3.jpg"
                     alt="Product 1"
                     loading="lazy"
@@ -919,11 +938,10 @@
                   />
                   </picture>
               
-                <!-- Repeat if you want more images in the ticker ... -->
-              </div>
+                  </div>
               
           </div>
-    </div>
+    </div> -->
     <a href="https://www.instagram.com/kadalas.tastytales?igsh=eGh5OXB4c3p1cXcy" class="followers "><h3 class="pyx">FOLLOW US</h3></a>
 
 </div>
