@@ -734,6 +734,9 @@ text-align: start;}
     width: 50%;
 }
 
+.c-space,.moments,.location{
+    overflow: hidden;
+}
 
 .outlets {
     position: relative;
