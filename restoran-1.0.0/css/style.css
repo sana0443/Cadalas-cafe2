@@ -901,7 +901,7 @@ h1{
     transition: transform 0.4s ease, box-shadow 0.4s ease; 
     object-fit: cover; 
     cursor: pointer;
-    height: 300px;
+    height: 400px;
     width: 80%;
     border-radius: 10px;
 
