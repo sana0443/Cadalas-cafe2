@@ -1054,8 +1054,8 @@ h1{
     height: 12px;
     margin: 0 5px;
     border-radius: 50%;
-    background: #ccc;
-    border: 1px solid #efeeee !important;
+    background: #adadad;
+    border: 1px solid #b9b6b6 !important;
     transition: background 0.3s ease-in-out;
 }
 
