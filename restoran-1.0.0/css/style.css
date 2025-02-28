@@ -295,7 +295,7 @@
 .testimonial-item i {
     color: #97d67c;
 }
-.location h1{
+.location h1 ,.testimonials h1{
     color: #97d67c;
 }
 .testimonial-item p {
