@@ -280,7 +280,7 @@
 
 .testimonial-item {
     background: #fff;
-    border: 2px solid #edd160;
+    border: 2px solid #97d67c;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
@@ -293,10 +293,10 @@
 }
 
 .testimonial-item i {
-    color: #edd160;
+    color: #97d67c;
 }
 .location h1{
-    color: #edd160;
+    color: #97d67c;
 }
 .testimonial-item p {
     font-size: 16px;
@@ -309,7 +309,7 @@
     width: 60px !important;
     height: 60px;
     border-radius: 50%;
-    border: 2px solid #edd160;
+    border: 2px solid #97d67c;
     object-fit: cover;
 }
 
@@ -344,7 +344,7 @@
 }
 
 .testimonial-carousel .owl-dot.active {
-    background: #edd160;
+    background: #97d67c;
 }
 
 
@@ -790,11 +790,11 @@ text-align: start;}
     color: white;
     border: none;
     padding: 10px 20px;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold;
     cursor: pointer;
-    margin-top: 10px;
     transition: 0.3s ease-in-out;
+    width: 85%;
 }
 
 .overlay-button:hover {
@@ -966,83 +966,93 @@ h1{
     
      
 
-
-
+/* Community Carousel Section */
+.community-carousel-section {
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    padding: 20px 0;
+}
 
 .community-carousel {
     display: flex;
+    justify-content: center;
     align-items: center;
-    position: relative;
     overflow: hidden;
+    position: relative;
+}
+
+.community-item {
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.community-item:hover {
+    transform: scale(1.05);
+}
+
+.community-item img {
     width: 100%;
-    padding: 10px 0;
-}
-
-.community-image-container {
-    display: flex;
-    gap: 10px;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    white-space: nowrap;
-    scrollbar-width: none; /* Hide scrollbar for Firefox */
-    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
-}
-
-.community-image-container::-webkit-scrollbar {
-    display: none; /* Hide scrollbar for Chrome, Safari, Opera */
-}
-
-.community-image-container img {
-    height: 300px;
-    width: auto;
+    height: 350px;
     object-fit: cover;
-    flex-shrink: 0;
 }
 
-/* Small screens: Adjust height */
-@media (max-width: 768px) {
-    .community-image-container img {
-        height: 250px;
-    }
-}
 
-/* Carousel controls */
-.carousel-control-prev,
-.carousel-control-next {
+
+/* Improved Owl Carousel Navigation */
+.community-carousel .owl-nav {
     position: absolute;
     top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 10;
+    pointer-events: none;
 }
 
-.carousel-control-prev {
-    left: 10px;
+.community-carousel .owl-prev,
+.community-carousel .owl-next {
+    background: #edd160 !important;
+    color: white !important;
+    padding: 20px 25px !important;
+    font-size: 24px !important;
+    transition: 0.3s;
+    pointer-events: auto;
+    position: absolute;
 }
 
-.carousel-control-next {
-    right: 10px;
+.community-carousel .owl-prev {
+    left: 20px;  /* Move left arrow outward */
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    display: block;
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    mask-size: cover;
-    -webkit-mask-size: cover;
+.community-carousel .owl-next {
+    right: 20px; /* Move right arrow outward */
 }
 
-.carousel-control-prev-icon {
-    mask-image: url('https://cdn-icons-png.flaticon.com/512/271/271220.png'); /* Left arrow */
-    -webkit-mask-image: url('https://cdn-icons-png.flaticon.com/512/271/271220.png');
+.community-carousel .owl-prev:hover,
+.community-carousel .owl-next:hover {
+    background: #edd160 !important;
 }
 
-.carousel-control-next-icon {
-    mask-image: url('https://cdn-icons-png.flaticon.com/512/271/271228.png'); /* Right arrow */
-    -webkit-mask-image: url('https://cdn-icons-png.flaticon.com/512/271/271228.png');
+/* Owl Carousel Dots */
+.community-carousel .owl-dots {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.community-carousel .owl-dot {
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background: #ccc;
+    border: 1px solid #efeeee !important;
+    transition: background 0.3s ease-in-out;
+}
+
+.community-carousel .owl-dot.active {
+    background: #edd160;
 }

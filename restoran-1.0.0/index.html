@@ -317,29 +317,29 @@
                 <div class="row align-items-center text-center ">
                     <h1 class="mb-5 w-100" style="color: rgb(6, 155, 140);">LOCATIONS</h1>
         
-                    <div class="col-6 col-md-6">
+                    <div class="col-6 col-md-6 p-4">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d1261289.035260063!2d75.10887073802958!3d11.01587363667175!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3ba659034bee8a53%3A0xfa3927fdea36d3a4!2sSouth%20Beach%2C%20Kuttichira%2C%20Kozhikode%2C%20Kerala%20673001!3m2!1d11.248301699999999!2d75.7725249!5e0!3m2!1sen!2sin!4v1740238847701!5m2!1sen!2sin" 
-                        width="100%" height="100px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        width="80%" height="100px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
         
-                    <div class="col-6 col-md-6 text-md-start text-start">
+                    <div class="col-6 col-md-6 text-md-start text-start p-4">
                         <a href="seaview.html" style="text-transform: lowercase;">
                             <button class="overlay-button">Kozhikode</button>
                         </a>
-                        <p>Contact - 34567345634</p>
+                        <!-- <p>Contact - 34567345634</p> -->
                     </div>
                
 
-                    <div class="col-6 col-md-6" style="margin-top: 20px;">
+                    <div class="col-6 col-md-6 p-4" >
                         <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d1261289.035260063!2d75.10887073802958!3d11.01587363667175!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3ba659034bee8a53%3A0xfa3927fdea36d3a4!2sSouth%20Beach%2C%20Kuttichira%2C%20Kozhikode%2C%20Kerala%20673001!3m2!1d11.248301699999999!2d75.7725249!5e0!3m2!1sen!2sin!4v1740238847701!5m2!1sen!2sin" 
-                        width="100%" height="100px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        width="80%" height="100px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
         
-                    <div class="col-6 col-md-6 text-md-start text-start">
+                    <div class="col-6 col-md-6 text-md-start text-start p-4">
                         <a href="seaview.html" style="text-transform: lowercase;">
                             <button class="overlay-button">Thiruvananthapuram</button>
                         </a>
-                        <p>Contact - 34567345634</p>
+                        <!-- <p>Contact - 34567345634</p> -->
                     </div>
                 </div>
             </div>
@@ -356,7 +356,7 @@
  
    <div class="testimonials pyx">
         <div class="text-center">
-            <h1 class="section-title mb-5 text-primary ">TESTIMONIALS</h1>
+            <h1 class="section-title mb-5  ">TESTIMONIALS</h1>
         </div>
         <div class="owl-carousel testimonial-carousel">
             <div class="testimonial-item">
@@ -428,51 +428,67 @@
 
 </div>
 
-   <div class=" pyx community">
-    <div class="text-center community">
-        <h1 class="section-title mb-5 text-center  fw-normal">COMMUNITY</h1>
+<div class=" community community-carousel-section pyx">
+    <div class="text-center">
+        <h1 class="section-title mb-5 text-primary">COMMUNITY</h1>
     </div>
-    <div id="communityCarousel" class="community-carousel">
-        <button class="carousel-control-prev" onclick="scrollCarousel(-1)">
-            <span class="carousel-control-prev-icon"></span>
-        </button>
-    
-        <div class="community-image-container">
-            <img src="./img/s3.jpg" class="img-fluid" />
-            <img src="./img/s3.jpg" class="img-fluid" />
-            <img src="./img/s3.jpg" class="img-fluid" />
-            <img src="./img/s2.jpg" class="img-fluid" />
-            <img src="./img/s2.jpg" class="img-fluid" />
-            <img src="./img/s2.jpg" class="img-fluid" />
-            <img src="./img/s1.jpg" class="img-fluid" />
-            <img src="./img/s1.jpg" class="img-fluid" />
-            <img src="./img/s1.jpg" class="img-fluid" />
+
+    <!-- Main Image Carousel -->
+    <div class="owl-carousel community-carousel">
+        <div class="community-item">
+            <img src="img/u1.jpg" alt="Community Image 1">
         </div>
-    
-        <button class="carousel-control-next" onclick="scrollCarousel(1)">
-            <span class="carousel-control-next-icon"></span>
-        </button>
+        <div class="community-item">
+            <img src="img/s3.jpg" alt="Community Image 2">
+        </div>
+        <div class="community-item">
+            <img src="img/s12.jpg" alt="Community Image 3">
+        </div>
+        <div class="community-item">
+            <img src="img/u2.jpg" alt="Community Image 4">
+        </div>
+        <div class="community-item">
+            <img src="img/s9.jpg" alt="Community Image 5">
+        </div>
     </div>
-    
-    <script>
-        const container = document.querySelector('.community-image-container');
-    
-        function scrollCarousel(direction) {
-            const scrollAmount = container.clientWidth / 2; // Scroll half the container width
-            container.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
-        }
-    
-        function autoScroll() {
-            if (container.scrollLeft + container.clientWidth >= container.scrollWidth) {
-                container.scrollLeft = 0; // Reset to start
-            } else {
-                container.scrollBy({ left: container.clientWidth / 2, behavior: 'smooth' });
+
+
+
+<!-- jQuery & Owl Carousel Script -->
+<script>
+    $(document).ready(function(){
+        let owl = $(".community-carousel");
+        
+        // Initialize Owl Carousel
+        owl.owlCarousel({
+            loop: true,                  
+            margin: 20,                  
+            nav: true,                   
+            dots: true,                   
+            autoplay: true,               
+            autoplayTimeout: 3000,        
+            autoplaySpeed: 1000,          
+            autoplayHoverPause: true,     
+            smartSpeed: 800,              
+            navText: ["❮", "❯"],  // Custom prev/next buttons
+            responsive: {
+                0: { items: 1 },         
+                600: { items: 2 },       
+                1000: { items: 3 }       
             }
-        }
-    
-        setInterval(autoScroll, 3000); // Auto-scroll every 3 seconds
-    </script>
-    
+        });
+
+        // Thumbnail Click - Jump to Slide in Main Carousel
+        $(".thumbnails img").on("click", function() {
+            let index = $(this).data("index");
+            owl.trigger("to.owl.carousel", [index, 500]);
+        });
+    });
+
+    $(window).on("load", function() {
+        $(".community-carousel").trigger("refresh.owl.carousel");
+    });
+</script>
    <!-- <div class="image-ticker-container2 mb-2">
     <div class="image-ticker">
         <div class="ticker-track">
