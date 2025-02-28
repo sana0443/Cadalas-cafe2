@@ -794,7 +794,7 @@ text-align: start;}
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s ease-in-out;
-    width: 85%;
+    width: 80%;
 }
 
 .overlay-button:hover {
@@ -882,6 +882,11 @@ h1{
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
+
+  .overlay-button {
+ 
+    width: 93% !important;
+}
 
  
 }
