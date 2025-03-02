@@ -134,8 +134,8 @@
 
 
   .pyx{
-    padding-bottom: 30px;
-    padding-top: 50px;
+    padding-bottom: 30px !important;
+    padding-top: 50px !important;
 
 
   }
@@ -791,7 +791,7 @@ text-align: start;}
     color: white;
     border: none;
     padding: 10px 20px;
-    font-size: 12px;
+    font-size: 18px;
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s ease-in-out;
@@ -953,7 +953,7 @@ h1{
     }
     .community-item img {
         
-        padding: 20px !important;
+        padding: 1px !important;
     }
 
  
@@ -1005,7 +1005,7 @@ h1{
 
 .community-item img {
     width:100% !important;
-    height: 380px;
+    height: 480px;
     object-fit: cover;
     padding: 0px;
 }
