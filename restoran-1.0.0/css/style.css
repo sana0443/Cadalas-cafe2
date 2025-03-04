@@ -350,78 +350,18 @@
 
 
 
-/*** Footer ***/
-.footer .btn.btn-social {
-    margin-right: 5px;
-    width: 35px;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #666565;
-    border: 1px solid #FFFFFF;
-    border-radius: 35px;
-    transition: .3s;
-}
 
-.footer .btn.btn-social:hover {
-    color: var(--primary);
-}
-
-.footer .btn.btn-link {
-    display: block;
-    margin-bottom: 5px;
-    padding: 0;
-    text-align: left;
-    color: #666565;
-    font-size: 15px;
-    font-weight: normal;
-    text-transform: capitalize;
-    transition: .3s;
-}
-
-.footer .btn.btn-link::before {
-    position: relative;
-    content: "\f105";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    margin-right: 10px;
-}
-
-.footer .btn.btn-link:hover {
-    letter-spacing: 1px;
-    box-shadow: none;
-}
-
-.footer .copyright {
-    padding: 25px 0;
-    font-size: 15px;
-    border-top: 1px solid rgba(256, 256, 256, .1);
-}
-
-.footer .copyright a {
-    color: #666565;
-}
-
-.footer .footer-menu a {
-    margin-right: 15px;
-    color: #666565;
-    padding-right: 15px;
-    border-right: 1px solid rgba(255, 255, 255, .1);
-}
-
-.footer .footer-menu a:last-child {
-    margin-right: 0;
-    padding-right: 0;
-    border-right: none;
-}
 
 
 .h3{
     color: white;
 
 }
-
+.copyright a{
+    color: #666565;
+    border-color: #666565;
+    border-radius: 50%;
+}
 
 .community,.moments{
     background-color: #efeeee !important;
@@ -431,56 +371,6 @@
 .main{
     overflow: hidden;
 }
-  
-  /* .image-ticker-container2 .ticker-track img {
-    display: inline-block;
-    height: 250px; 
-    margin: 0 5px; 
-    transition: transform 0.5s ease;
-    width: 250px;
-  }
-
-  .image-ticker-container3 .ticker-track img {
-    display: inline-block;
-    height: 250px; 
-    margin: 0 5px;
-    width: 250px;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-  }
-  
-  
-  
-  @media (max-width: 768px) {
-    .image-ticker {
-        animation: ticker-scroll 10s linear infinite;
-    }
-  
-  
-    .image-ticker-container3 .ticker-track img {
-        height: 260px;
-    }
-    .image-ticker-container2 .ticker-track img {
-        height: 260px;
-    }
-   
-  }
-
-  .image-ticker-container3 .ticker-track {
-    display: inline-flex; 
-    animation: scroll-rightzzz 65s linear infinite !important;
-  }
-  
-  
-  
-  @keyframes scroll-rightzzz {
-    0% {
-        transform: translateX(-50%); 
-    }
-    100% {
-        transform: translateX(0); 
-    }
-} */
 
 
 .carousel-container {
@@ -659,11 +549,12 @@ text-align: start;}
     opacity: 1;
 }
 
-.team {
+.team, .chronicle, .location, .about {
     background-color: #efeeee;
     overflow: hidden;
 
 }
+
 
 .outlets-main{
     /* background-color: #d5d4d4 ; */
@@ -676,7 +567,6 @@ text-align: start;}
 
 
 .about{
-    background-color: #efeeee;
     padding-left: 130px;
     padding-right: 70px;
     overflow: hidden;
@@ -746,6 +636,7 @@ text-align: start;}
 .c-space,.moments,.location{
     overflow: hidden;
 }
+
 
 /* .outlets {
     position: relative;
@@ -923,9 +814,7 @@ h1{
     flex-wrap: wrap; /* Ensures responsiveness */
   
 }
-.chronicle{
-    background-color: #efeeee;
-}
+
 .chronicle h2,p{
     text-align: start;
     margin-top: 10px;
