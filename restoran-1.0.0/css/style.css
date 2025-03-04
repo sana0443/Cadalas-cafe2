@@ -680,6 +680,7 @@ text-align: start;}
     padding-left: 130px;
     padding-right: 70px;
     overflow: hidden;
+    text-align: start;
 
 }
 
@@ -702,6 +703,8 @@ text-align: start;}
     .about{
         padding-left: 0px;
         padding-right: 0px; 
+        text-align: center;
+
     }
 }
 
@@ -923,6 +926,7 @@ h1{
     
 
 }
+
 
 .chronicle-image-container img{
     width: 100%;
