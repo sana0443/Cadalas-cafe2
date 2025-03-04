@@ -694,6 +694,9 @@ text-align: start;}
     height: 80px;
     background-color:#666565 ;
 }
+.about p{
+    text-align: start;
+}
 
 @media (max-width: 991px) {
     .about h2::after {
@@ -703,8 +706,11 @@ text-align: start;}
     .about{
         padding-left: 0px;
         padding-right: 0px; 
-        text-align: center;
+        text-align: center !important;
 
+    }
+    .about p{
+        text-align: center;
     }
 }
 
