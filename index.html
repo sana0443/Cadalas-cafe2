@@ -390,7 +390,14 @@
       const toggler = document.querySelector(".navbar-toggler");
       const navbarCollapse = document.querySelector(".navbar-collapse");
       const body = document.body;
-    
+      if (window.location.hash) {
+        const target = document.querySelector(window.location.hash);
+        if (target) {
+            setTimeout(() => {
+                target.scrollIntoView({ behavior: "smooth" });
+            }, 500); // Delay to allow page load
+        }
+    }
       toggler.addEventListener("click", function () {
         navbarCollapse.classList.toggle("show");
         toggler.classList.toggle("active");
