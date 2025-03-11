@@ -60,9 +60,12 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0 pe-4">
                         <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="" class="nav-item nav-link">About</a>
-                        <a href="" class="nav-item nav-link">Services</a>
-                        <a href="" class="nav-item nav-link">Awards</a>
+                        <a href="#story" class="nav-item nav-link">story</a>
+                        <a href="#team" class="nav-item nav-link">team</a>
+                        <a href="#awards" class="nav-item nav-link">awards</a>
+                        <a href="#locations" class="nav-item nav-link">locations</a>
+                        <a href="#community" class="nav-item nav-link">community</a>
+
                         <a href="" class=" menu-btn btn btn-primary py-2 px-4">Menu</a>
 
                     </div>
@@ -70,36 +73,7 @@
                 </div>
             </nav>
             
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-  const toggler = document.querySelector(".navbar-toggler");
-  const navbarCollapse = document.querySelector(".navbar-collapse");
-  const body = document.body;
 
-  toggler.addEventListener("click", function () {
-    navbarCollapse.classList.toggle("show");
-    toggler.classList.toggle("active");
-    
-    // Prevent scrolling when the menu is open
-    if (navbarCollapse.classList.contains("show")) {
-      body.classList.add("no-scroll");
-    } else {
-      body.classList.remove("no-scroll");
-    }
-  });
-
-  // Close menu when clicking a link
-  document.querySelectorAll(".nav-link").forEach((link) => {
-    link.addEventListener("click", function () {
-      navbarCollapse.classList.remove("show");
-      toggler.classList.remove("active");
-      body.classList.remove("no-scroll");
-    });
-  });
-});
-
-
-</script>
            
                     <div class="carousel-container">
                         <div class="carousel-slide active" style="background-image: url('./img/u1.jpg');">
@@ -128,77 +102,9 @@
             </div>
         </div>
     
-        <script>
-         document.addEventListener("DOMContentLoaded", function () {
-    let newsIndex = 0;
-    let slideIndex = 0;
+       
 
-    const newsItems = document.querySelectorAll(".flash-news-item");
-    const flashNewsContainer = document.querySelector(".flash-news-container");
-    const slides = document.querySelectorAll(".carousel-slide");
-    const texts = document.querySelectorAll(".text-overlay");
-    const dots = document.querySelectorAll(".carousel-dot");
-
-  
-    const backgroundColors = [ "gray", "rgb(6, 155, 140)","#ed8e54"];
-
-    function showNextNews() {
-        const currentItem = newsItems[newsIndex];
-        
-        // Move current item left and fade out
-        currentItem.classList.remove("active");
-        currentItem.classList.add("exit");
-
-        // Calculate next index
-        newsIndex = (newsIndex + 1) % newsItems.length;
-        const nextItem = newsItems[newsIndex];
-
-        // Ensure the previous item is fully transitioned out before the next enters
-        setTimeout(() => {
-            currentItem.classList.remove("exit"); // Reset exit state
-            nextItem.classList.add("active"); // Move next item into view
-            flashNewsContainer.style.backgroundColor = backgroundColors[newsIndex];
-        }, 500); // Wait for transition to finish
-    }
-
-
-    function changeSlide() {
-        slides[slideIndex].classList.remove("active");
-        texts[slideIndex].classList.remove("show-text");
-        dots[slideIndex].classList.remove("active");
-
-        slideIndex = (slideIndex + 1) % slides.length;
-
-        slides[slideIndex].classList.add("active");
-        texts[slideIndex].classList.add("show-text");
-        dots[slideIndex].classList.add("active");
-    }
-
-    function goToSlide(index) {
-        slides[slideIndex].classList.remove("active");
-        texts[slideIndex].classList.remove("show-text");
-        dots[slideIndex].classList.remove("active");
-
-        slideIndex = index;
-
-        slides[slideIndex].classList.add("active");
-        texts[slideIndex].classList.add("show-text");
-        dots[slideIndex].classList.add("active");
-    }
-
-    // Start intervals only if elements exist
-    if (newsItems.length > 0) {
-        setInterval(showNextNews, 3000);
-        flashNewsContainer.style.backgroundColor = backgroundColors[0]; // Set initial background color
-    }
-
-    if (slides.length > 0) setInterval(changeSlide, 2000);
-});
-
-        </script>
-  
-
-            <div class="about pys  ">
+            <div class="about pys  " id="story">
                 <div class="row  align-items-center p-4 ">
                     <div class="col-lg-6   ">
 
@@ -225,7 +131,7 @@
             </div>
 
 
-        <div class="  team pyx">
+        <div class="  team pyx" id="team">
                 <div class="row  align-items-center">
                     <div class="col-lg-6">
                             <img class="img-fluid    wow zoomIn" data-wow-delay="0.1s" src="img/team.jpg">
@@ -254,7 +160,7 @@
 
         </div>
           
-        <div class="awards pyx ">
+        <div class="awards pyx " id="awards">
                 <h1 class="  mb-5 p-2">AWARDS</h1>
                 <!-- <h1 class="mb-5">Acheivements and specialities</h1> -->
             <div class="image-ticker-container ">
@@ -306,7 +212,7 @@
                 </div>
       
 
-        <div class="team pyx">
+        <div class="team pyx" id="locations">
             <div class="container">
                 <div class="row align-items-center text-center justify-content-center ">
                     <h1 class="mb-5 w-100" style="color: rgb(6, 155, 140);">LOCATIONS</h1>
@@ -339,7 +245,7 @@
       
 
  
-   <div class="testimonials pyx">
+   <div class="testimonials pyx" id="testimonials">
         <div class="text-center">
             <h1 class="section-title mb-5  ">TESTIMONIALS</h1>
         </div>
@@ -381,31 +287,7 @@
     </div>
 
         
-        <script>
-            $(document).ready(function(){
-                $(".testimonial-carousel").owlCarousel({
-                    loop: true,                  // Enables infinite looping
-                    margin: 20,                  // Space between testimonials
-                    nav: false,                   // Hide navigation arrows
-                    dots: true,                   // Show dots for navigation
-                    autoplay: true,               // Enable autoplay
-                    autoplayTimeout: 3000,        // Slide changes every 3 seconds
-                    autoplaySpeed: 1000,          // Smooth transition speed
-                    autoplayHoverPause: true,     // Pause when hovered
-                    smartSpeed: 800,              // Adjust speed for smooth effect
-                    responsive: {
-                        0: { items: 1 },         // 1 item on mobile
-                        600: { items: 2 },       // 2 items on tablets
-                        1000: { items: 3 }       // 3 items on desktop
-                    }
-                });
-            });
-            </script>
-            <script>
-                $(window).on("load", function() {
-                    $(".testimonial-carousel").trigger("refresh.owl.carousel");
-                });
-                </script>
+        
                 
     
 <div class="wave">
@@ -413,7 +295,7 @@
 
 </div>
 
-<div class=" community community-carousel-section pyx">
+<div class=" community community-carousel-section pyx" id="community">
     <div class="text-center">
         <h1 class="section-title mb-5 text-primary">COMMUNITY</h1>
     </div>
@@ -440,40 +322,7 @@
 
 
 <!-- jQuery & Owl Carousel Script -->
-<script>
-    $(document).ready(function(){
-        let owl = $(".community-carousel");
-        
-        // Initialize Owl Carousel
-        owl.owlCarousel({
-            loop: true,                  
-            margin: 20,                  
-            nav: true,                   
-            dots: true,                   
-            autoplay: true,               
-            autoplayTimeout: 3000,        
-            autoplaySpeed: 1000,          
-            autoplayHoverPause: true,     
-            smartSpeed: 800,              
-            navText: ["❮", "❯"],  // Custom prev/next buttons
-            responsive: {
-                0: { items: 1 },         
-                600: { items: 2 },       
-                1000: { items: 3 }       
-            }
-        });
 
-        // Thumbnail Click - Jump to Slide in Main Carousel
-        $(".thumbnails img").on("click", function() {
-            let index = $(this).data("index");
-            owl.trigger("to.owl.carousel", [index, 500]);
-        });
-    });
-
-    $(window).on("load", function() {
-        $(".community-carousel").trigger("refresh.owl.carousel");
-    });
-</script>
   
     <a href="https://www.instagram.com/kadalas.tastytales?igsh=eGh5OXB4c3p1cXcy" class="followers "><h3 class="pyx">FOLLOW US</h3></a>
 
@@ -535,6 +384,168 @@
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+      const toggler = document.querySelector(".navbar-toggler");
+      const navbarCollapse = document.querySelector(".navbar-collapse");
+      const body = document.body;
+    
+      toggler.addEventListener("click", function () {
+        navbarCollapse.classList.toggle("show");
+        toggler.classList.toggle("active");
+        
+        // Prevent scrolling when the menu is open
+        if (navbarCollapse.classList.contains("show")) {
+          body.classList.add("no-scroll");
+        } else {
+          body.classList.remove("no-scroll");
+        }
+      });
+    
+      // Close menu when clicking a link
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", function () {
+          navbarCollapse.classList.remove("show");
+          toggler.classList.remove("active");
+          body.classList.remove("no-scroll");
+        });
+      });
+    });
+    
+    
+    </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+let newsIndex = 0;
+let slideIndex = 0;
+
+const newsItems = document.querySelectorAll(".flash-news-item");
+const flashNewsContainer = document.querySelector(".flash-news-container");
+const slides = document.querySelectorAll(".carousel-slide");
+const texts = document.querySelectorAll(".text-overlay");
+const dots = document.querySelectorAll(".carousel-dot");
+
+
+const backgroundColors = [ "gray", "rgb(6, 155, 140)","#ed8e54"];
+
+function showNextNews() {
+   const currentItem = newsItems[newsIndex];
+   
+   // Move current item left and fade out
+   currentItem.classList.remove("active");
+   currentItem.classList.add("exit");
+
+   // Calculate next index
+   newsIndex = (newsIndex + 1) % newsItems.length;
+   const nextItem = newsItems[newsIndex];
+
+   // Ensure the previous item is fully transitioned out before the next enters
+   setTimeout(() => {
+       currentItem.classList.remove("exit"); // Reset exit state
+       nextItem.classList.add("active"); // Move next item into view
+       flashNewsContainer.style.backgroundColor = backgroundColors[newsIndex];
+   }, 500); // Wait for transition to finish
+}
+
+
+function changeSlide() {
+   slides[slideIndex].classList.remove("active");
+   texts[slideIndex].classList.remove("show-text");
+   dots[slideIndex].classList.remove("active");
+
+   slideIndex = (slideIndex + 1) % slides.length;
+
+   slides[slideIndex].classList.add("active");
+   texts[slideIndex].classList.add("show-text");
+   dots[slideIndex].classList.add("active");
+}
+
+function goToSlide(index) {
+   slides[slideIndex].classList.remove("active");
+   texts[slideIndex].classList.remove("show-text");
+   dots[slideIndex].classList.remove("active");
+
+   slideIndex = index;
+
+   slides[slideIndex].classList.add("active");
+   texts[slideIndex].classList.add("show-text");
+   dots[slideIndex].classList.add("active");
+}
+
+// Start intervals only if elements exist
+if (newsItems.length > 0) {
+   setInterval(showNextNews, 3000);
+   flashNewsContainer.style.backgroundColor = backgroundColors[0]; // Set initial background color
+}
+
+if (slides.length > 0) setInterval(changeSlide, 2000);
+});
+
+   </script>
+
+
+<script>
+    $(document).ready(function(){
+        $(".testimonial-carousel").owlCarousel({
+            loop: true,                  // Enables infinite looping
+            margin: 20,                  // Space between testimonials
+            nav: false,                   // Hide navigation arrows
+            dots: true,                   // Show dots for navigation
+            autoplay: true,               // Enable autoplay
+            autoplayTimeout: 3000,        // Slide changes every 3 seconds
+            autoplaySpeed: 1000,          // Smooth transition speed
+            autoplayHoverPause: true,     // Pause when hovered
+            smartSpeed: 800,              // Adjust speed for smooth effect
+            responsive: {
+                0: { items: 1 },         // 1 item on mobile
+                600: { items: 2 },       // 2 items on tablets
+                1000: { items: 3 }       // 3 items on desktop
+            }
+        });
+    });
+    </script>
+    <script>
+        $(window).on("load", function() {
+            $(".testimonial-carousel").trigger("refresh.owl.carousel");
+        });
+        </script>
+
+<script>
+    $(document).ready(function(){
+        let owl = $(".community-carousel");
+        
+        // Initialize Owl Carousel
+        owl.owlCarousel({
+            loop: true,                  
+            margin: 20,                  
+            nav: true,                   
+            dots: true,                   
+            autoplay: true,               
+            autoplayTimeout: 3000,        
+            autoplaySpeed: 1000,          
+            autoplayHoverPause: true,     
+            smartSpeed: 800,              
+            navText: ["❮", "❯"],  // Custom prev/next buttons
+            responsive: {
+                0: { items: 1 },         
+                600: { items: 2 },       
+                1000: { items: 3 }       
+            }
+        });
+
+        // Thumbnail Click - Jump to Slide in Main Carousel
+        $(".thumbnails img").on("click", function() {
+            let index = $(this).data("index");
+            owl.trigger("to.owl.carousel", [index, 500]);
+        });
+    });
+
+    $(window).on("load", function() {
+        $(".community-carousel").trigger("refresh.owl.carousel");
+    });
+</script>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
