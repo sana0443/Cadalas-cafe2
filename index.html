@@ -49,12 +49,13 @@
 
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0 main">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+            <nav class="navbar navbar-expand-lg">
                 <a href="" class="navbar-brand p-0 logo">
                     <img src="img/logo (2).png" alt="Logo">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
+                <button class="navbar-toggler" type="button" id="navbarToggler">
+                    <i class="fa fa-bars"></i>
+                    <i class="fa fa-times"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0 pe-4">
@@ -62,13 +63,43 @@
                         <a href="" class="nav-item nav-link">About</a>
                         <a href="" class="nav-item nav-link">Services</a>
                         <a href="" class="nav-item nav-link">Awards</a>
+                        <a href="" class=" menu-btn btn btn-primary py-2 px-4">Menu</a>
 
-                       
                     </div>
-                    <a href="" class="btn btn-primary py-2 px-4">Menu</a>
+
                 </div>
             </nav>
+            
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+  const toggler = document.querySelector(".navbar-toggler");
+  const navbarCollapse = document.querySelector(".navbar-collapse");
+  const body = document.body;
 
+  toggler.addEventListener("click", function () {
+    navbarCollapse.classList.toggle("show");
+    toggler.classList.toggle("active");
+    
+    // Prevent scrolling when the menu is open
+    if (navbarCollapse.classList.contains("show")) {
+      body.classList.add("no-scroll");
+    } else {
+      body.classList.remove("no-scroll");
+    }
+  });
+
+  // Close menu when clicking a link
+  document.querySelectorAll(".nav-link").forEach((link) => {
+    link.addEventListener("click", function () {
+      navbarCollapse.classList.remove("show");
+      toggler.classList.remove("active");
+      body.classList.remove("no-scroll");
+    });
+  });
+});
+
+
+</script>
            
                     <div class="carousel-container">
                         <div class="carousel-slide active" style="background-image: url('./img/u1.jpg');">

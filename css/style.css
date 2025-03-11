@@ -4,6 +4,10 @@
   --light: #656565;
   --dark: white;
 }
+body.no-scroll {
+  overflow: hidden;
+}
+
 
 .ff-secondary {
   font-family: "Roboto", serif;
@@ -53,6 +57,7 @@
   background: transparent;
   transition: background 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
   z-index: 1000;
+  padding: 20px 30px;
 }
 
 .scrolled {
@@ -66,10 +71,112 @@
   transition: color 0.3s ease-in-out;
 }
 
+.menu-btn{
+margin-left: 20px;}
+
 .navbar-nav .nav-link:hover {
   color: #f8c529 !important;
 }
+@media (max-width: 760px) {
+  .navbar {
+      background: transparent !important;
+  }
 
+  /* Full-screen collapse menu */
+  .navbar-collapse {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 0;
+      background: #efeeee;
+      overflow: hidden;
+      transition: height 0.3s ease-in-out;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden !important;
+  }
+
+  .navbar-collapse.show {
+      height: 100vh;
+  }
+
+
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-nav .nav-item {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Move Menu button to the bottom */
+.menu-btn {
+    width: 80%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+  .navbar-nav .nav-link {
+      color: #666565 !important;
+      font-size: 20px;
+      font-weight: bold;
+  }
+
+  /* Navbar Toggler */
+  .navbar-toggler {
+      border: none;
+      background: none;
+      font-size: 28px;
+      color: white;
+      transition: transform 0.3s ease-in-out;
+      outline: none;
+      position: absolute;
+      right: 50px;
+      top: 15px;
+  }
+
+  /* Ensure proper icon transition */
+  .navbar-toggler i {
+      transition: transform 0.3s ease-in-out;
+      position: absolute;
+  }
+
+  .navbar-toggler .fa-bars {
+      display: block;
+      z-index: 2 !important;
+
+  }
+
+  .navbar-toggler .fa-times {
+      display: none;
+  }
+
+  /* When toggler is active, switch icons */
+  .navbar-toggler.active .fa-bars {
+      display: none;
+  }
+
+  .navbar-toggler.active .fa-times {
+      display: block;
+      color: #666565 !important;
+
+      z-index: 100 !important;
+  }
+ 
+
+  /* Brand logo */
+  .navbar-brand img {
+      max-height: 50px;
+  }
+}
 .navbar-brand img {
   max-height: 50px;
 }
