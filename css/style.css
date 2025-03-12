@@ -192,8 +192,16 @@ margin-left: 20px;}
 .sub-container {
   position: relative;
   width: 100%;
-  height: 45vh; /* Full height */
+  height: 48vh; /* Full height */
   overflow: hidden;
+}
+
+.sub-container p{
+  color: white !important;
+  /* z-index: 100; */
+  font-size: 1rem;
+  text-align: center !important ;
+
 }
 
 .carousel-slide {
@@ -205,6 +213,7 @@ margin-left: 20px;}
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
+
 
 .carousel-slide.active {
   opacity: 1;
