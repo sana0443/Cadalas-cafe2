@@ -376,7 +376,6 @@ margin-left: 20px;}
 .testimonial-item i {
   color: #97d67c;
 }
-.location h1,
 .testimonials h1 {
   color: #97d67c;
 }
@@ -665,11 +664,8 @@ margin-left: 20px;}
   .about {
     padding-left: 0px;
     padding-right: 0px;
-    text-align: center !important;
   }
-  .about p {
-    text-align: center;
-  }
+
 }
 
 .hr {
@@ -686,6 +682,7 @@ margin-left: 20px;}
   text-align: center;
   overflow: hidden;
 }
+
 
 .overlay-button:hover {
   background: rgba(6, 155, 140, 0.9);
@@ -842,6 +839,9 @@ h1 {
 
   .overlay-button {
     width: 93% !important;
+  }
+  .awards h1, .team h1,.testimonials h1, .community h1{
+    text-align: start !important;
   }
 }
 
