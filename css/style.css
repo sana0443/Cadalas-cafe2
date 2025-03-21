@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-  --primary: #edd160;
+  --primary:  #F1C257;
   --light: #656565;
   --dark: white;
 }
@@ -329,7 +329,7 @@ margin-left: 20px;}
 
 .team h1,
 .moments h1 {
-  color: #ed8e54;
+  color: #F4815A;
 }
 
 .team-item img {
@@ -370,7 +370,7 @@ margin-left: 20px;}
 
 .testimonial-item {
   background: #fff;
-  border: 2px solid #97d67c;
+  border: 2px solid #C2DD96;
   border-radius: 10px;
   padding: 20px;
   text-align: center;
@@ -383,10 +383,10 @@ margin-left: 20px;}
 }
 
 .testimonial-item i {
-  color: #97d67c;
+  color: #C2DD96;
 }
 .testimonials h1 {
-  color: #97d67c;
+  color: #C2DD96;
 }
 .testimonial-item p {
   font-size: 16px;
@@ -400,7 +400,7 @@ margin-left: 20px;}
   width: 60px !important;
   height: 60px;
   border-radius: 50%;
-  border: 2px solid #97d67c;
+  border: 2px solid #C2DD96;
   object-fit: cover;
 }
 
@@ -435,7 +435,7 @@ margin-left: 20px;}
 }
 
 .testimonial-carousel .owl-dot.active {
-  background: #97d67c;
+  background: #C2DD96;
 }
 
 .h3 {
@@ -694,10 +694,10 @@ margin-left: 20px;}
 
 
 .overlay-button:hover {
-  background: rgba(6, 155, 140, 0.9);
+  background:  #11AEB8;
 }
 .c-space h1 {
-  color: rgba(6, 155, 140, 0.9);
+  color:  #11AEB8;
 }
 .c-drink img {
   width: 50%;
@@ -774,7 +774,7 @@ margin-left: 20px;}
 }
 
 .community h1 {
-  color: #97d67c;
+  color: #C2DD96;
 }
 
 h1 {
@@ -913,7 +913,7 @@ p {
   }
 }
 .chronicle h1 {
-  color: #97d67c;
+  color: #C2DD96;
 }
 
 /* Community Carousel Section */
@@ -963,7 +963,7 @@ p {
 
 .community-carousel .owl-prev,
 .community-carousel .owl-next {
-  background: #edd160 !important;
+  background:  #F1C257 !important;
   color: white !important;
   padding: 20px 25px !important;
   font-size: 24px !important;
@@ -982,7 +982,7 @@ p {
 
 .community-carousel .owl-prev:hover,
 .community-carousel .owl-next:hover {
-  background: #edd160 !important;
+  background:  #F1C257 !important;
 }
 
 /* Owl Carousel Dots */
@@ -1003,5 +1003,5 @@ p {
 }
 
 .community-carousel .owl-dot.active {
-  background: #edd160;
+  background:  #F1C257;
 }
