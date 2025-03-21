@@ -765,7 +765,7 @@ margin-left: 20px;}
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s ease-in-out;
-  width: 80%;
+  width: 90% !important;
 }
 
 .overlay-button:hover {
@@ -846,7 +846,7 @@ h1 {
   }
 
   .overlay-button {
-    width: 93% !important;
+    width: 97% !important;
   }
   .awards h1, .team h1,.testimonials h1, .community h1{
     text-align: start !important;
