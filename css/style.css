@@ -377,9 +377,7 @@ margin-left: 20px;}
   transition: transform 0.3s ease-in-out;
 }
 
-.testimonial-item:hover {
-  transform: scale(1.05);
-}
+
 
 .testimonial-item i {
   color: #C2DD96;
@@ -723,7 +721,7 @@ margin-left: 20px;}
 }
 
 .overlay-button:hover {
-  background: rgb(4, 120, 108);
+  background: #11AEB1
 }
 
 .community h1 {
