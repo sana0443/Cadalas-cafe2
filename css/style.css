@@ -598,6 +598,7 @@ margin-left: 20px;}
   opacity: 1;
 }
 
+
 .team,
 .chronicle,
 .location,
@@ -615,10 +616,13 @@ margin-left: 20px;}
 }
 
 .about {
-  padding-left: 130px;
-  padding-right: 70px;
+
   overflow: hidden;
   text-align: start;
+}
+.about h2{
+    padding-left: 130px;
+  padding-right: 70px;
 }
 
 .about h2::after {
@@ -633,6 +637,8 @@ margin-left: 20px;}
 }
 .about p {
   text-align: start;
+  padding-left: 28px;
+
 }
 
 @media (max-width: 991px) {
@@ -640,7 +646,7 @@ margin-left: 20px;}
     display: none;
   }
 
-  .about {
+  .about h2 ,.about p {
     padding-left: 0px;
     padding-right: 0px;
   }
