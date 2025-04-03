@@ -816,6 +816,9 @@ p {
   height: 400px !important;
   object-fit: cover;
 }
+.chronicle-text-container{
+  height: 250px;
+}
 
 .plr {
   padding-left: 20px;

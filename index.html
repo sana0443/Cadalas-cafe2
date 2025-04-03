@@ -1,593 +1,612 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>KADALAS CAFE</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/favicon.ico" rel="icon" />
 
- 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link
+      href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<!-- Owl Carousel CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
 
-    <link href="css/style.css" rel="stylesheet">
-</head>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
 
-<body>
+  <body>
     <div class="container-xxl bg-white p-0">
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
+      <!-- Spinner Start -->
+      <div
+        id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+      >
+        <div
+          class="spinner-border text-primary"
+          style="width: 3rem; height: 3rem"
+          role="status"
+        >
+          <span class="sr-only">Loading...</span>
         </div>
-        <!-- Spinner End -->
+      </div>
+      <!-- Spinner End -->
 
+      <!-- Navbar & Hero Start -->
+      <div class="container-xxl position-relative p-0 main">
+        <nav class="navbar navbar-expand-lg">
+          <a href="" class="navbar-brand p-0 logo">
+            <img src="img/logo (2).png" alt="Logo" />
+          </a>
+          <button class="navbar-toggler" type="button" id="navbarToggler">
+            <i class="fa fa-bars"></i>
+            <i class="fa fa-times"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0 pe-4">
+              <a href="index.html" class="nav-item nav-link active">Home</a>
+              <a href="#story" class="nav-item nav-link">story</a>
+              <a href="#team" class="nav-item nav-link">team</a>
+              <a href="#awards" class="nav-item nav-link">awards</a>
+              <a href="#locations" class="nav-item nav-link">locations</a>
+              <a href="#community" class="nav-item nav-link">community</a>
 
-        <!-- Navbar & Hero Start -->
-        <div class="container-xxl position-relative p-0 main">
-            <nav class="navbar navbar-expand-lg">
-                <a href="" class="navbar-brand p-0 logo">
-                    <img src="img/logo (2).png" alt="Logo">
-                </a>
-                <button class="navbar-toggler" type="button" id="navbarToggler">
-                    <i class="fa fa-bars"></i>
-                    <i class="fa fa-times"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0 pe-4">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="#story" class="nav-item nav-link">story</a>
-                        <a href="#team" class="nav-item nav-link">team</a>
-                        <a href="#awards" class="nav-item nav-link">awards</a>
-                        <a href="#locations" class="nav-item nav-link">locations</a>
-                        <a href="#community" class="nav-item nav-link">community</a>
+              <a href="" class="menu-btn btn btn-primary py-2 px-4">Menu</a>
+            </div>
+          </div>
+        </nav>
 
-                        <a href="" class=" menu-btn btn btn-primary py-2 px-4">Menu</a>
+        <div class="carousel-container">
+          <div
+            class="carousel-slide active"
+            style="
+              background-image: url('./img/MainT.jpg');
+              background-size: cover;
+              background-position: center;
+            "
+          >
+            <div class="text-overlay show-text">
+              A blend of flavors and warmth
+            </div>
+          </div>
+          <div
+            class="carousel-slide"
+            style="
+              background-image: url('./img/Mainc.jpg');
+              background-size: cover;
+              background-position: center;
+            "
+          >
+            <div class="text-overlay">
+              Where flavors and memories come alive
+            </div>
+          </div>
 
-                    </div>
-
-                </div>
-            </nav>
-            
-
-           
-                    <div class="carousel-container">
-                       <div class="carousel-slide active" style="background-image: url('./img/MainT.jpg'); background-size: cover; background-position: center;">
-    <div class="text-overlay show-text">
-        A blend of flavors and warmth
-    </div>
-</div>
-<div class="carousel-slide" style="background-image: url('./img/Mainc.jpg'); background-size: cover; background-position: center;">
-    <div class="text-overlay">Where flavors and memories come alive</div>
-</div>
-
-                        <div class="carousel-dots">
-                            <div class="carousel-dot active" onclick="goToSlide(0)"></div>
-                            <div class="carousel-dot" onclick="goToSlide(1)"></div>
-                        </div>
-                    </div>
-                    
-                    
-          
+          <div class="carousel-dots">
+            <div class="carousel-dot active" onclick="goToSlide(0)"></div>
+            <div class="carousel-dot" onclick="goToSlide(1)"></div>
+          </div>
         </div>
+      </div>
 
-        <div class="flash-news-container">
-            <div class="flash-news-wrapper">
-                <div class="flash-news-item active">🎉 Special Offer: 50% Off on All Coffee Today! ☕</div>
-                <div class="flash-news-item">🌟 New Seasonal Menu Available Now! 🍽️</div>
-                <div class="flash-news-item">🎊 Happy Hours: Buy 1 Get 1 Free from 4-6 PM! 🍹</div>
-            </div>
+      <div class="flash-news-container">
+        <div class="flash-news-wrapper">
+          <div class="flash-news-item active">
+            🎉 Special Offer: 50% Off on All Coffee Today! ☕
+          </div>
+          <div class="flash-news-item">
+            🌟 New Seasonal Menu Available Now! 🍽️
+          </div>
+          <div class="flash-news-item">
+            🎊 Happy Hours: Buy 1 Get 1 Free from 4-6 PM! 🍹
+          </div>
         </div>
-    
-       
+      </div>
 
-            <div class="about pys " id="story">
-                <div class="row  align-items-center p-4 ">
-                    <div class="col-lg-6   ">
+      <div class="about pys" id="story">
+        <div class="row align-items-center p-4">
+          <div class="col-lg-6">
+            <h2 class="position-relative mb-4">STORY</h2>
+          </div>
 
-                        <h2 class="position-relative mb-4">STORY</h2>
-                </div>
-                
-                <div class="col-lg-6 mt-3   ">
-                    <p>
-                      It is Kadalas that transformed the place into a space where everyone enjoys their own space.
-                            Kadalas, one of the popular sea-viewing cafes in Kerala situated at South Beach, has introduced a distinctive space to the cultural sphere of Calicut. The space is designed to become a subject that could interact with its guests. Its audience s privileged to opt for spaces in accordance with their mood. Over the course of time, it has been identified as the most popular gathering location in Calicut.
-                          
-                    </p>
-
-            </div>
-
-                </div>
-                <div class="wave">
-                    <img src="./img/waves (2).png"/>
-    
-                </div>
-            </div>
-        
-
-
-        <div class="  team pyx" id="team">
-                <div class="row  align-items-center">
-                    <div class="col-lg-6">
-                            <img class="img-fluid    wow zoomIn" data-wow-delay="0.1s" src="img/team.jpg">
-                    </div>
-                    <div class="col-lg-6 ">
-
-                        <h1 class="mt-3 p-4" style="color:  #F4815A;"> TEAM</h1>
-                        <p class="mb-4 p-4 ">
-                            Strategic and critical thinking of the Managing Director, Ahammed Shihab 
-                            and the solemn support of three partners, namely Abdul Haseeb, Suhas 
-                            Ahamed and Muhammed Shahin, smoothened the trajectory of Kadalas. 
-                            His entrepreneurial skills are sharpened by his experience handling multiple 
-                            restaurant franchises from around the globe for a Qatar-based MNC. His 
-                            partners also bring rich experience from FMCG industry and instill energy 
-                            for the course. This is resultant in developing a strong team as well.
-                        </p>
-                       
-                    
-                    </div>
-             
-               
-            </div>
-            <div class="wave">
-                <img src="./img/waves (2).png"/>
-    
-            </div>
-        </div>
-      
-          
-        <div class="awards pyx " id="awards">
-                <h1 class="  mb-5 p-4">AWARDS</h1>
-                <!-- <h1 class="mb-5">Acheivements and specialities</h1> -->
-            <div class="image-ticker-container ">
-                <div class="row g-2"> 
-                    <div class="col-lg-3 col-md-4 col-4">
-                        <img src="img/awards-01.png" class="img-fluid" alt="Award 1">
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-4">
-                        <img src="img/awards-02.png" class="img-fluid" alt="Award 2">
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-4">
-                        <img src="img/awards-03.png" class="img-fluid" alt="Award 3">
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-4">
-                        <img src="img/awards-04.png" class="img-fluid" alt="Award 4">
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-4">
-                        <img src="img/awards-05.png" class="img-fluid" alt="Award 5">
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-4">
-                        <img src="img/awards-06.png" class="img-fluid" alt="Award 6">
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-4">
-                        <img src="img/awards-07.png" class="img-fluid" alt="Award 7">
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-4">
-                        <img src="img/awards-08.png" class="img-fluid" alt="Award 8">
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-4">
-                        <img src="img/awards-09.png" class="img-fluid" alt="Award 9">
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-4">
-                        <img src="img/awards-10.png" class="img-fluid" alt="Award 10">
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-4">
-                        <img src="img/awards-11.png" class="img-fluid" alt="Award 11">
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-4">
-                        <img src="img/awards-12.png" class="img-fluid" alt="Award 12">
-                    </div>
-                </div>
-                
-            
-                </div>
-                <div class="wave">
-                    <img src="./img/waves (2).png"/>
-    
-                </div>
-                </div>
-             
-      
-
-        <div class="team pyx" id="locations">
-            <div class="container">
-                <div class="row align-items-center text-center justify-content-center ">
-                    <h1 class="mb-5 p-4" style="color:  #11AEB8;">LOCATIONS</h1>
-        
-        
-                    <div class="col-12 col-md-12   p-4">
-                        <a href="seaview.html" style="text-transform: lowercase;">
-                            <button class="overlay-button"> SEAVIEW CAFE <br/>Kozhikode</button>
-                        </a>
-                    </div>
-               
-
-                 
-        
-                    <div class="col-12 col-md-12   p-4">
-                        <a href="urban.html" style="text-transform: lowercase;">
-                            <button class="overlay-button">URBAN CAFE <br/>Thiruvananthapuram</button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="wave">
-                <img src="./img/waves (2).png"/>
-    
-            </div>
-        </div>
-        
-        
-        
-      
-      
-
- 
-   <div class="testimonials pyx" id="testimonials">
-        <div class="text-center">
-            <h1 class=" p-4 mb-5  ">TESTIMONIALS</h1>
-        </div>
-        <div class="owl-carousel testimonial-carousel">
-            <div class="testimonial-item">
-                <i class="fa fa-quote-left fa-2x"></i>
-                <p>Excellent service and great experience!</p>
-                <div class="d-flex align-items-center justify-content-center">
-                    <img src="img/s1.jpg" alt="Client">
-                    <div>
-                        <h5>John Doe</h5>
-                        <small>Business Owner</small>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-item">
-                <i class="fa fa-quote-left fa-2x"></i>
-                <p>Amazing quality and customer support.</p>
-                <div class="d-flex align-items-center justify-content-center">
-                    <img src="img/s1.jpg" alt="Client">
-                    <div>
-                        <h5>Jane Smith</h5>
-                        <small>Entrepreneur</small>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-item">
-                <i class="fa fa-quote-left fa-2x"></i>
-                <p>Highly recommended for everyone!</p>
-                <div class="d-flex align-items-center justify-content-center">
-                    <img src="img/s1.jpg" alt="Client">
-                    <div>
-                        <h5>Michael Brown</h5>
-                        <small>Designer</small>
-                    </div>
-                </div>
-            </div>
+          <div class="col-lg-6 mt-3">
+            <p>
+              It is Kadalas that transformed the place into a space where
+              everyone enjoys their own space. Kadalas, one of the popular
+              sea-viewing cafes in Kerala situated at South Beach, has
+              introduced a distinctive space to the cultural sphere of Calicut.
+              The space is designed to become a subject that could interact with
+              its guests. Its audience s privileged to opt for spaces in
+              accordance with their mood. Over the course of time, it has been
+              identified as the most popular gathering location in Calicut.
+            </p>
+          </div>
         </div>
         <div class="wave">
-            <img src="./img/waves (2).png"/>
-        
+          <img src="./img/waves (2).png" />
         </div>
-    </div>
+      </div>
 
-        
-        
-                
-    
-
-
-<div class=" community community-carousel-section pyx" id="community">
-    <div class="text-center">
-        <h1 class=" p-4 mb-5 text-primary">COMMUNITY</h1>
-    </div>
-
-    <!-- Main Image Carousel -->
-    <div class="owl-carousel community-carousel">
-        <div class="community-item">
-            <img src="img/community1.jpg" alt="Community Image 1">
+      <div class="team pyx" id="team">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <img
+              class="img-fluid wow zoomIn"
+              data-wow-delay="0.1s"
+              src="img/team.jpg"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h1 class="mt-3 p-4" style="color: #f4815a">TEAM</h1>
+            <p class="mb-4 p-4">
+              Strategic and critical thinking of the Managing Director, Ahammed
+              Shihab and the solemn support of three partners, namely Abdul
+              Haseeb, Suhas Ahamed and Muhammed Shahin, smoothened the
+              trajectory of Kadalas. His entrepreneurial skills are sharpened by
+              his experience handling multiple restaurant franchises from around
+              the globe for a Qatar-based MNC. His partners also bring rich
+              experience from FMCG industry and instill energy for the course.
+              This is resultant in developing a strong team as well.
+            </p>
+          </div>
         </div>
-        <div class="community-item">
-            <img src="img/community2.jpg" alt="Community Image 2">
+        <div class="wave">
+          <img src="./img/waves (2).png" />
         </div>
-        <div class="community-item">
-            <img src="img/community3.jpg" alt="Community Image 3">
-        </div>
-        <div class="community-item">
-            <img src="img/community4.jpg" alt="Community Image 4">
-        </div>
-        <div class="community-item">
-            <img src="img/community5.jpg" alt="Community Image 5">
-        </div>
-        <div class="community-item">
-            <img src="img/community6.jpg" alt="Community Image 3">
-        </div>
-        <div class="community-item">
-            <img src="img/community7.jpg" alt="Community Image 4">
-        </div>
-        <div class="community-item">
-            <img src="img/community8.jpg" alt="Community Image 5">
-        </div>   <div class="community-item">
-            <img src="img/community9.jpg" alt="Community Image 3">
-        </div>
-        <div class="community-item">
-            <img src="img/community10.jpg" alt="Community Image 4">
-        </div>
-        <div class="community-item">
-            <img src="img/community11.jpg" alt="Community Image 5">
-        </div>   <div class="community-item">
-            <img src="img/community12.jpg" alt="Community Image 3">
-        </div>
-        <div class="community-item">
-            <img src="img/commmunity13.jpg" alt="Community Image 4">
-        </div>
-      
-    </div>
+      </div>
 
-
-
-<!-- jQuery & Owl Carousel Script -->
-
-  
-    <a href="https://www.instagram.com/kadalas.tastytales?igsh=eGh5OXB4c3p1cXcy" class="followers "><h3 class="pyx">FOLLOW US</h3></a>
-    <div class="wave">
-        <img src="./img/waves (2).png"/>
-    
-    </div>
-</div>
-
-
-       
-
-        
-
-        <!-- Footer Start -->
-        <div class="footer">
-            <div class="container py-4">
-                <div class="text-center mb-3">
-                    <a href="#" class="footer-logo">
-                        <img src="./img/logofooter.png" alt="Kadalas Cafe Logo" style="height: 100px;">
-                    </a>
-                    <hr/>
-                </div>
-                <div class="row text-center">
-                    <div class="col-12 mb-2">
-                        <a class="btn" href="">  
-                            KADALAS HOSPITALITY LLP
-                             DOOR NO 61/8972
-                             SOUTH BEACH, CALICUT HPO
-                             KOZHIKODE 673001</a>
-                    </div>
-                    <div class="col-12 mb-2">
-                        <a class="btn" href=""><i class="fa fa-phone-alt me-2"></i> 7994855501 | 7994855502</a>
-                    </div>
-                    <div class="col-12 mb-2">
-                        <a class="btn" href="mailto:kadalascafe@gmail.com"style="text-transform: lowercase;"
-                          ><i class="fa fa-envelope me-2" ></i> kadalascafe@gmail.com</a
-                        >
-                      </div>
-                    <div class="col-12 mb-2">
-                        <a class="btn" href="urban.html"> Thiruvananthapuram </a>
-                    </div>
-                    <div class="col-12">
-                        <a class="btn" href="seaview.html"> Kozhikode </a>
-                    </div>
-                </div>
+      <div class="awards pyx" id="awards">
+        <h1 class="mb-5 p-4">AWARDS</h1>
+        <!-- <h1 class="mb-5">Acheivements and specialities</h1> -->
+        <div class="image-ticker-container">
+          <div class="row g-2">
+            <div class="col-lg-3 col-md-4 col-4">
+              <img src="img/awards-01.png" class="img-fluid" alt="Award 1" />
             </div>
-        
-        <hr/>
-            <div class="container">
-                <div class="copyright">
-                    <div class="row">
-                        <div class="col-md-12 d-flex justify-content-center pt-2 mb-4 ">
-                            <a class="btn btn-outline-light btn-social " href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
-                        </div>
-                        <div class="col-md-12 text-center mb-2">
-                            &copy; <a href="#">2025 Kadalas Cafe, All Rights Reserved.</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-lg-3 col-md-4 col-4">
+              <img src="img/awards-02.png" class="img-fluid" alt="Award 2" />
             </div>
+            <div class="col-lg-3 col-md-4 col-4">
+              <img src="img/awards-03.png" class="img-fluid" alt="Award 3" />
+            </div>
+            <div class="col-lg-3 col-md-4 col-4">
+              <img src="img/awards-04.png" class="img-fluid" alt="Award 4" />
+            </div>
+            <div class="col-lg-3 col-md-4 col-4">
+              <img src="img/awards-05.png" class="img-fluid" alt="Award 5" />
+            </div>
+            <div class="col-lg-3 col-md-4 col-4">
+              <img src="img/awards-06.png" class="img-fluid" alt="Award 6" />
+            </div>
+            <div class="col-lg-3 col-md-4 col-4">
+              <img src="img/awards-07.png" class="img-fluid" alt="Award 7" />
+            </div>
+            <div class="col-lg-3 col-md-4 col-4">
+              <img src="img/awards-08.png" class="img-fluid" alt="Award 8" />
+            </div>
+            <div class="col-lg-3 col-md-4 col-4">
+              <img src="img/awards-09.png" class="img-fluid" alt="Award 9" />
+            </div>
+            <div class="col-lg-3 col-md-4 col-4">
+              <img src="img/awards-10.png" class="img-fluid" alt="Award 10" />
+            </div>
+            <div class="col-lg-3 col-md-4 col-4">
+              <img src="img/awards-11.png" class="img-fluid" alt="Award 11" />
+            </div>
+            <div class="col-lg-3 col-md-4 col-4">
+              <img src="img/awards-12.png" class="img-fluid" alt="Award 12" />
+            </div>
+          </div>
         </div>
-        
-        
-        <!-- Footer End -->
+        <div class="wave">
+          <img src="./img/waves (2).png" />
+        </div>
+      </div>
 
+      <div class="team pyx" id="locations">
+        <div class="container">
+          <div
+            class="row align-items-center text-center justify-content-center"
+          >
+            <h1 class="mb-5 p-4" style="color: #11aeb8">LOCATIONS</h1>
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+            <div class="col-12 col-md-12 p-4">
+              <a href="seaview.html" style="text-transform: lowercase">
+                <button class="overlay-button">
+                  SEAVIEW CAFE <br />Kozhikode
+                </button>
+              </a>
+            </div>
+
+            <div class="col-12 col-md-12 p-4">
+              <a href="urban.html" style="text-transform: lowercase">
+                <button class="overlay-button">
+                  URBAN CAFE <br />Thiruvananthapuram
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="wave">
+          <img src="./img/waves (2).png" />
+        </div>
+      </div>
+
+      <div class="testimonials pyx" id="testimonials">
+        <div class="text-center">
+          <h1 class="p-4 mb-5">TESTIMONIALS</h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel">
+          <div class="testimonial-item">
+            <i class="fa fa-quote-left fa-2x"></i>
+            <p>Excellent service and great experience!</p>
+            <div class="d-flex align-items-center justify-content-center">
+              <img src="img/s1.jpg" alt="Client" />
+              <div>
+                <h5>John Doe</h5>
+                <small>Business Owner</small>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <i class="fa fa-quote-left fa-2x"></i>
+            <p>Amazing quality and customer support.</p>
+            <div class="d-flex align-items-center justify-content-center">
+              <img src="img/s1.jpg" alt="Client" />
+              <div>
+                <h5>Jane Smith</h5>
+                <small>Entrepreneur</small>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <i class="fa fa-quote-left fa-2x"></i>
+            <p>Highly recommended for everyone!</p>
+            <div class="d-flex align-items-center justify-content-center">
+              <img src="img/s1.jpg" alt="Client" />
+              <div>
+                <h5>Michael Brown</h5>
+                <small>Designer</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wave">
+          <img src="./img/waves (2).png" />
+        </div>
+      </div>
+
+      <div class="community community-carousel-section pyx" id="community">
+        <div class="text-center">
+          <h1 class="p-4 mb-5 text-primary">COMMUNITY</h1>
+        </div>
+
+        <!-- Main Image Carousel -->
+        <div class="owl-carousel community-carousel">
+          <div class="community-item">
+            <img src="img/community1.jpg" alt="Community Image 1" />
+          </div>
+          <div class="community-item">
+            <img src="img/community2.jpg" alt="Community Image 2" />
+          </div>
+          <div class="community-item">
+            <img src="img/community3.jpg" alt="Community Image 3" />
+          </div>
+          <div class="community-item">
+            <img src="img/community4.jpg" alt="Community Image 4" />
+          </div>
+          <div class="community-item">
+            <img src="img/community5.jpg" alt="Community Image 5" />
+          </div>
+          <div class="community-item">
+            <img src="img/community6.jpg" alt="Community Image 3" />
+          </div>
+          <div class="community-item">
+            <img src="img/community7.jpg" alt="Community Image 4" />
+          </div>
+          <div class="community-item">
+            <img src="img/community8.jpg" alt="Community Image 5" />
+          </div>
+          <div class="community-item">
+            <img src="img/community9.jpg" alt="Community Image 3" />
+          </div>
+          <div class="community-item">
+            <img src="img/community10.jpg" alt="Community Image 4" />
+          </div>
+          <div class="community-item">
+            <img src="img/community11.jpg" alt="Community Image 5" />
+          </div>
+          <div class="community-item">
+            <img src="img/community12.jpg" alt="Community Image 3" />
+          </div>
+          <div class="community-item">
+            <img src="img/commmunity13.jpg" alt="Community Image 4" />
+          </div>
+        </div>
+
+        <!-- jQuery & Owl Carousel Script -->
+
+        <a
+          href="https://www.instagram.com/kadalas.tastytales?igsh=eGh5OXB4c3p1cXcy"
+          class="followers"
+          ><h3 class="pyx">FOLLOW US</h3></a
+        >
+        <div class="wave">
+          <img src="./img/waves (2).png" />
+        </div>
+      </div>
+
+      <!-- Footer Start -->
+      <div class="footer">
+        <div class="container py-4">
+          <div class="text-center mb-3">
+            <a href="#" class="footer-logo">
+              <img
+                src="./img/logofooter.png"
+                alt="Kadalas Cafe Logo"
+                style="height: 100px"
+              />
+            </a>
+            <hr />
+          </div>
+          <div class="row text-center">
+            <div class="col-12 mb-2">
+              <a class="btn" href="">
+                KADALAS HOSPITALITY LLP DOOR NO 61/8972 SOUTH BEACH, CALICUT HPO
+                KOZHIKODE 673001</a
+              >
+            </div>
+            <div class="col-12 mb-2">
+              <a class="btn" href=""
+                ><i class="fa fa-phone-alt me-2"></i> 7994855501 | 7994855502</a
+              >
+            </div>
+            <div class="col-12 mb-2">
+              <a
+                class="btn"
+                href="mailto:kadalascafe@gmail.com"
+                style="text-transform: lowercase"
+                ><i class="fa fa-envelope me-2"></i> kadalascafe@gmail.com</a
+              >
+            </div>
+            <div class="col-12 mb-2">
+              <a class="btn" href="urban.html"> Thiruvananthapuram </a>
+            </div>
+            <div class="col-12">
+              <a class="btn" href="seaview.html"> Kozhikode </a>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+        <div class="container">
+          <div class="copyright">
+            <div class="row">
+              <div class="col-md-12 d-flex justify-content-center pt-2 mb-4">
+                <a class="btn btn-outline-light btn-social" href=""
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a class="btn btn-outline-light btn-social" href=""
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+              <div class="col-md-12 text-center mb-2">
+                &copy; <a href="#">2025 Kadalas Cafe, All Rights Reserved.</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer End -->
+
+      <!-- Back to Top -->
+      <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+        ><i class="bi bi-arrow-up"></i
+      ></a>
     </div>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-      const toggler = document.querySelector(".navbar-toggler");
-      const navbarCollapse = document.querySelector(".navbar-collapse");
-      const body = document.body;
-      if (window.location.hash) {
-        const target = document.querySelector(window.location.hash);
-        if (target) {
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggler = document.querySelector(".navbar-toggler");
+        const navbarCollapse = document.querySelector(".navbar-collapse");
+        const body = document.body;
+        if (window.location.hash) {
+          const target = document.querySelector(window.location.hash);
+          if (target) {
             setTimeout(() => {
-                target.scrollIntoView({ behavior: "smooth" });
+              target.scrollIntoView({ behavior: "smooth" });
             }, 500); // Delay to allow page load
+          }
         }
-    }
-      toggler.addEventListener("click", function () {
-        navbarCollapse.classList.toggle("show");
-        toggler.classList.toggle("active");
-        
-        // Prevent scrolling when the menu is open
-        if (navbarCollapse.classList.contains("show")) {
-          body.classList.add("no-scroll");
-        } else {
-          body.classList.remove("no-scroll");
-        }
-      });
-    
-      // Close menu when clicking a link
-      document.querySelectorAll(".nav-link").forEach((link) => {
-        link.addEventListener("click", function () {
-          navbarCollapse.classList.remove("show");
-          toggler.classList.remove("active");
-          body.classList.remove("no-scroll");
+        toggler.addEventListener("click", function () {
+          navbarCollapse.classList.toggle("show");
+          toggler.classList.toggle("active");
+
+          // Prevent scrolling when the menu is open
+          if (navbarCollapse.classList.contains("show")) {
+            body.classList.add("no-scroll");
+          } else {
+            body.classList.remove("no-scroll");
+          }
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll(".nav-link").forEach((link) => {
+          link.addEventListener("click", function () {
+            navbarCollapse.classList.remove("show");
+            toggler.classList.remove("active");
+            body.classList.remove("no-scroll");
+          });
         });
       });
-    });
-    
-    
     </script>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-let newsIndex = 0;
-let slideIndex = 0;
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let newsIndex = 0;
+        let slideIndex = 0;
 
-const newsItems = document.querySelectorAll(".flash-news-item");
-const flashNewsContainer = document.querySelector(".flash-news-container");
-const slides = document.querySelectorAll(".carousel-slide");
-const texts = document.querySelectorAll(".text-overlay");
-const dots = document.querySelectorAll(".carousel-dot");
+        const newsItems = document.querySelectorAll(".flash-news-item");
+        const flashNewsContainer = document.querySelector(
+          ".flash-news-container"
+        );
+        const slides = document.querySelectorAll(".carousel-slide");
+        const texts = document.querySelectorAll(".text-overlay");
+        const dots = document.querySelectorAll(".carousel-dot");
 
+        const backgroundColors = ["gray", " #11AEB8", "#F4815A"];
 
-const backgroundColors = [ "gray", " #11AEB8","#F4815A"];
+        function showNextNews() {
+          const currentItem = newsItems[newsIndex];
 
-function showNextNews() {
-   const currentItem = newsItems[newsIndex];
-   
-   // Move current item left and fade out
-   currentItem.classList.remove("active");
-   currentItem.classList.add("exit");
+          // Move current item left and fade out
+          currentItem.classList.remove("active");
+          currentItem.classList.add("exit");
 
-   // Calculate next index
-   newsIndex = (newsIndex + 1) % newsItems.length;
-   const nextItem = newsItems[newsIndex];
+          // Calculate next index
+          newsIndex = (newsIndex + 1) % newsItems.length;
+          const nextItem = newsItems[newsIndex];
 
-   // Ensure the previous item is fully transitioned out before the next enters
-   setTimeout(() => {
-       currentItem.classList.remove("exit"); // Reset exit state
-       nextItem.classList.add("active"); // Move next item into view
-       flashNewsContainer.style.backgroundColor = backgroundColors[newsIndex];
-   }, 500); // Wait for transition to finish
-}
+          // Ensure the previous item is fully transitioned out before the next enters
+          setTimeout(() => {
+            currentItem.classList.remove("exit"); // Reset exit state
+            nextItem.classList.add("active"); // Move next item into view
+            flashNewsContainer.style.backgroundColor =
+              backgroundColors[newsIndex];
+          }, 500); // Wait for transition to finish
+        }
 
+        function changeSlide() {
+          slides[slideIndex].classList.remove("active");
+          texts[slideIndex].classList.remove("show-text");
+          dots[slideIndex].classList.remove("active");
 
-function changeSlide() {
-   slides[slideIndex].classList.remove("active");
-   texts[slideIndex].classList.remove("show-text");
-   dots[slideIndex].classList.remove("active");
+          slideIndex = (slideIndex + 1) % slides.length;
 
-   slideIndex = (slideIndex + 1) % slides.length;
+          slides[slideIndex].classList.add("active");
+          texts[slideIndex].classList.add("show-text");
+          dots[slideIndex].classList.add("active");
+        }
 
-   slides[slideIndex].classList.add("active");
-   texts[slideIndex].classList.add("show-text");
-   dots[slideIndex].classList.add("active");
-}
+        function goToSlide(index) {
+          slides[slideIndex].classList.remove("active");
+          texts[slideIndex].classList.remove("show-text");
+          dots[slideIndex].classList.remove("active");
 
-function goToSlide(index) {
-   slides[slideIndex].classList.remove("active");
-   texts[slideIndex].classList.remove("show-text");
-   dots[slideIndex].classList.remove("active");
+          slideIndex = index;
 
-   slideIndex = index;
+          slides[slideIndex].classList.add("active");
+          texts[slideIndex].classList.add("show-text");
+          dots[slideIndex].classList.add("active");
+        }
 
-   slides[slideIndex].classList.add("active");
-   texts[slideIndex].classList.add("show-text");
-   dots[slideIndex].classList.add("active");
-}
+        // Start intervals only if elements exist
+        if (newsItems.length > 0) {
+          setInterval(showNextNews, 3000);
+          flashNewsContainer.style.backgroundColor = backgroundColors[0]; // Set initial background color
+        }
 
-// Start intervals only if elements exist
-if (newsItems.length > 0) {
-   setInterval(showNextNews, 3000);
-   flashNewsContainer.style.backgroundColor = backgroundColors[0]; // Set initial background color
-}
+        if (slides.length > 0) setInterval(changeSlide, 2000);
+      });
+    </script>
 
-if (slides.length > 0) setInterval(changeSlide, 2000);
-});
-
-   </script>
-
-
-<script>
-    $(document).ready(function(){
+    <script>
+      $(document).ready(function () {
         $(".testimonial-carousel").owlCarousel({
-            loop: true,                  // Enables infinite looping
-            margin: 20,                  // Space between testimonials
-            nav: false,                   // Hide navigation arrows
-            dots: true,                   // Show dots for navigation
-            autoplay: true,               // Enable autoplay
-            autoplayTimeout: 3000,        // Slide changes every 3 seconds
-            autoplaySpeed: 1000,          // Smooth transition speed
-            autoplayHoverPause: true,     // Pause when hovered
-            smartSpeed: 800,              // Adjust speed for smooth effect
-            responsive: {
-                0: { items: 1 },         // 1 item on mobile
-                600: { items: 2 },       // 2 items on tablets
-                1000: { items: 3 }       // 3 items on desktop
-            }
+          loop: true, // Enables infinite looping
+          margin: 20, // Space between testimonials
+          nav: false, // Hide navigation arrows
+          dots: true, // Show dots for navigation
+          autoplay: true, // Enable autoplay
+          autoplayTimeout: 3000, // Slide changes every 3 seconds
+          autoplaySpeed: 1000, // Smooth transition speed
+          autoplayHoverPause: true, // Pause when hovered
+          smartSpeed: 800, // Adjust speed for smooth effect
+          responsive: {
+            0: { items: 1 }, // 1 item on mobile
+            600: { items: 2 }, // 2 items on tablets
+            1000: { items: 3 }, // 3 items on desktop
+          },
         });
-    });
+      });
     </script>
     <script>
-        $(window).on("load", function() {
-            $(".testimonial-carousel").trigger("refresh.owl.carousel");
-        });
-        </script>
+      $(window).on("load", function () {
+        $(".testimonial-carousel").trigger("refresh.owl.carousel");
+      });
+    </script>
 
-<script>
-    $(document).ready(function(){
+    <script>
+      $(document).ready(function () {
         let owl = $(".community-carousel");
-        
+
         // Initialize Owl Carousel
         owl.owlCarousel({
-            loop: true,                  
-            margin: 20,                  
-            nav: true,                   
-            dots: true,                   
-            autoplay: true,               
-            autoplayTimeout: 3000,        
-            autoplaySpeed: 1000,          
-            autoplayHoverPause: true,     
-            smartSpeed: 800,              
-            navText: ["❮", "❯"],  // Custom prev/next buttons
-            responsive: {
-                0: { items: 1 },         
-                600: { items: 2 },       
-                1000: { items: 3 }       
-            }
+          loop: true,
+          margin: 20,
+          nav: true,
+          dots: true,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          autoplaySpeed: 1000,
+          autoplayHoverPause: true,
+          smartSpeed: 800,
+          navText: ["❮", "❯"], // Custom prev/next buttons
+          responsive: {
+            0: { items: 1 },
+            600: { items: 2 },
+            1000: { items: 3 },
+          },
         });
 
         // Thumbnail Click - Jump to Slide in Main Carousel
-        $(".thumbnails img").on("click", function() {
-            let index = $(this).data("index");
-            owl.trigger("to.owl.carousel", [index, 500]);
+        $(".thumbnails img").on("click", function () {
+          let index = $(this).data("index");
+          owl.trigger("to.owl.carousel", [index, 500]);
         });
-    });
+      });
 
-    $(window).on("load", function() {
+      $(window).on("load", function () {
         $(".community-carousel").trigger("refresh.owl.carousel");
-    });
-</script>
+      });
+    </script>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -600,11 +619,10 @@ if (slides.length > 0) setInterval(changeSlide, 2000);
     <script src="lib/tempusdominus/js/moment.min.js"></script>
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-<!-- Owl Carousel JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
