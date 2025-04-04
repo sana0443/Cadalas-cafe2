@@ -269,50 +269,28 @@
         </div>
       </div>
 
-      <div class="testimonials pyx" id="testimonials">
-        <div class="text-center">
-          <h1 class="p-4 mb-5">TESTIMONIALS</h1>
+      <div class="event-hosting pyx">
+        <h1 class="mb-5 p-4">EVENT HOSTING</h1>
+      
+        <!-- Common Image Collage with varied sizes -->
+        <div class="image-collage">
+          <img src="img/eventt3.jpg" alt="Image 1">
+          <img src="img/event2.jpg" alt="Image 2">
+          <img src="img/event1.jpg" alt="Image 3">
+          <img src="img/event4.jpg" alt="Image 4">
         </div>
-        <div class="owl-carousel testimonial-carousel">
-          <div class="testimonial-item">
-            <i class="fa fa-quote-left fa-2x"></i>
-            <p>Excellent service and great experience!</p>
-            <div class="d-flex align-items-center justify-content-center">
-              <img src="img/s1.jpg" alt="Client" />
-              <div>
-                <h5>John Doe</h5>
-                <small>Business Owner</small>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-item">
-            <i class="fa fa-quote-left fa-2x"></i>
-            <p>Amazing quality and customer support.</p>
-            <div class="d-flex align-items-center justify-content-center">
-              <img src="img/s1.jpg" alt="Client" />
-              <div>
-                <h5>Jane Smith</h5>
-                <small>Entrepreneur</small>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-item">
-            <i class="fa fa-quote-left fa-2x"></i>
-            <p>Highly recommended for everyone!</p>
-            <div class="d-flex align-items-center justify-content-center">
-              <img src="img/s1.jpg" alt="Client" />
-              <div>
-                <h5>Michael Brown</h5>
-                <small>Designer</small>
-              </div>
-            </div>
-          </div>
+      
+        <!-- Buttons Section -->
+        <div class="button-container">
+          <button class="download-btn" onclick="downloadPDF('pdf/category1.pdf')">Seaview Cafe Events</button>
+          <button class="download-btn" onclick="downloadPDF('pdf/category2.pdf')">Urban Cafe Events</button>
         </div>
+      
         <div class="wave">
           <img src="./img/waves (2).png" />
         </div>
       </div>
-
+      
       <div class="community community-carousel-section pyx" id="community">
         <div class="text-center">
           <h1 class="p-4 mb-5 text-primary">COMMUNITY</h1>
@@ -608,6 +586,11 @@
         $(".community-carousel").trigger("refresh.owl.carousel");
       });
     </script>
+<script>
+    function downloadPDF(pdfPath) {
+      window.open(pdfPath, '_blank'); // Opens the PDF in a new tab
+    }
+  </script>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

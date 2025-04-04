@@ -330,10 +330,10 @@ margin-left: 20px;}
 
 /*** Testimonial Section ***/
 
-.testimonials {
+.event-hosting {
   overflow: hidden;
 }
-.testimonial-carousel {
+/* .testimonial-carousel {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -348,17 +348,19 @@ margin-left: 20px;}
   text-align: center;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
-}
+} */
 
 
 
-.testimonial-item i {
+/* .testimonial-item i {
   color: #C2DD96;
-}
-.testimonials h1 {
+} */
+.event-hosting h1 {
   color: #C2DD96;
+  text-align: center;
+
 }
-.testimonial-item p {
+/* .testimonial-item p {
   font-size: 16px;
   color: #555;
   margin-bottom: 15px;
@@ -388,7 +390,7 @@ margin-left: 20px;}
 }
 
 /* Owl Carousel Dots */
-.testimonial-carousel .owl-dots {
+/* .testimonial-carousel .owl-dots {
   margin-top: 20px;
   display: flex;
   justify-content: center;
@@ -406,7 +408,7 @@ margin-left: 20px;}
 
 .testimonial-carousel .owl-dot.active {
   background: #C2DD96;
-}
+}  */
 
 .h3 {
   color: white;
@@ -779,9 +781,14 @@ h1 {
   .overlay-button {
     width: 97% !important;
   }
-  .awards h1, .team h1,.testimonials h1, .community h1{
+  .awards h1, .team h1,.event-hosting h1, .community h1{
     text-align: start !important;
   }
+  .category {
+    width:100% !important;
+  
+  }
+ 
 }
 
 .gallery-sec {
@@ -936,5 +943,75 @@ p {
 }
 
 .community-carousel .owl-dot.active {
+ 
   background:  #F1C257;
+}
+
+
+
+.event-hosting {
+  text-align: center;
+  padding: 40px 5px;
+}
+
+.image-collage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  grid-template-rows: auto;
+  gap: 5px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.image-collage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Large top image */
+.image-collage img:nth-child(1) {
+  grid-column: span 2; /* Takes full width */
+  grid-row: span 2;
+  height: 360px;
+}
+
+/* Bottom left image */
+.image-collage img:nth-child(2) {
+  grid-column: span 1;
+  grid-row: span 2;
+  height: 320px;
+}
+
+/* Bottom right images */
+.image-collage img:nth-child(3),
+.image-collage img:nth-child(4) {
+  grid-column: span 1;
+  grid-row: span 1;
+  height: 156px;
+}
+
+
+
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.download-btn {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #C2DD96;
+  color: #656565;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  max-width:  350px;
+}
+
+.download-btn:hover {
+  background-color: #B0D07D;
 }
