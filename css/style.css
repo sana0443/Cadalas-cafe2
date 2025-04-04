@@ -1008,12 +1008,11 @@ p {
 }
 
 .download-btn {
-  padding: 10px 15px;
+  padding: 10px 20px;
   font-size: 16px;
   background-color: #C2DD96;
   color: #656565;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
   max-width:  350px;
 }
