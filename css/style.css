@@ -34,6 +34,10 @@ body.no-scroll {
   padding-bottom: 20px;
   /* margin-top: 40px; */
 }
+.pye{
+  margin-left: 10%;
+  margin-right: 10%;
+}
 
 /*** Spinner ***/
 #spinner {
@@ -229,15 +233,18 @@ margin-left: 20px;}
 
 .text-overlay {
   position: absolute;
-  top: 50%;
+  top: 85% !important;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
   z-index: 2;
   opacity: 0;
+  padding: 10px;
+  width: 100% !important;
+  font-family: "Dancing Script", cursive;;
   transition: opacity 1s ease-in-out;
 }
 
@@ -465,18 +472,7 @@ margin-left: 20px;}
   opacity: 1;
 }
 
-.text-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
-  z-index: 2; /* Ensure text is above overlay */
-  width: 80%; /* Optional: Adjust width for better readability */
-}
+
 
 /* Dots container */
 .carousel-dots {
@@ -792,6 +788,10 @@ h1 {
     width:100% !important;
   
   }
+  .event-hosting p{
+    text-align: start !important;
+
+  }
  
 }
 
@@ -954,8 +954,11 @@ p {
 
 
 .event-hosting {
-  text-align: center;
   padding: 40px 5px;
+}
+.event-hosting p{
+  text-align: center ;
+
 }
 
 .image-collage {
@@ -963,9 +966,10 @@ p {
   grid-template-columns: repeat(2, 1fr); /* Two columns */
   grid-template-rows: auto;
   gap: 5px;
-  max-width: 800px;
+  max-width: 1000px;
   margin: auto;
 }
+
 
 .image-collage img {
   width: 100%;
