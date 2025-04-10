@@ -877,7 +877,7 @@ p {
 }
 
 .community-item {
-  padding: 10px;
+  padding: 5px;
   text-align: center;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
