@@ -580,6 +580,8 @@ margin-left: 20px;}
   height: 100%;
   font-weight: bold;
   opacity: 0;
+  font-size: .9rem;
+  padding: 5px;
   transform: translateX(100%); /* Start off-screen (right) */
   transition: transform 1s ease-in-out, opacity 0.8s ease-in-out;
 }
