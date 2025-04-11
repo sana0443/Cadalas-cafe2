@@ -61,9 +61,7 @@ body.no-scroll {
   transition: color 0.3s ease-in-out;
 }
 
-.menu-btn {
-  margin-left: 20px;
-}
+
 
 .navbar-nav .nav-link:hover {
   color: #f8c529 !important;
@@ -142,9 +140,7 @@ body.no-scroll {
   padding-top: 50px !important;
 }
 
-.footer {
-  background-color: #efeeee;
-}
+
 
 .footer a {
   font-size: 0.8rem !important;
@@ -161,7 +157,6 @@ body.no-scroll {
 }
 
 .event-hosting h1 {
-  color: #c2dd96;
   text-align: center;
 }
 
@@ -173,7 +168,6 @@ body.no-scroll {
 
 .community,
 .moments {
-  background-color: #efeeee !important;
   overflow: hidden;
 }
 .main {
@@ -323,11 +317,10 @@ body.no-scroll {
 .chronicle,
 .location,
 .about {
-  background-color: #efeeee;
   overflow: hidden;
 }
 
-.about h1 {
+.about h1 ,.event-hosting h1, .locations h1, .moments h1, .team h1 .location h1,.followers h1 {
   color: #666565;
 }
 
@@ -371,9 +364,7 @@ body.no-scroll {
 .overlay-button:hover {
   background: #11aeb8;
 }
-.c-space h1 {
-  color: #11aeb8;
-}
+
 .c-drink img {
   width: 50%;
 }
@@ -400,9 +391,7 @@ body.no-scroll {
   background: #11aeb1;
 }
 
-.community h1 {
-  color: #c2dd96;
-}
+
 
 h1 {
   font-size: 1.7rem;
@@ -495,10 +484,21 @@ h1 {
   }
 
   /* Move Menu button to the bottom */
+
   .menu-btn {
+    width: 200px !important;
+    text-align: center;
+}
+
+  .event-btn {
     width: 80%;
     text-align: center;
     margin-top: 15px;
+    margin-left: 20px;
+
+  }
+  .menu-section{
+    width: 100%;
   }
 
   .navbar-nav .nav-link {
@@ -586,9 +586,7 @@ p {
     padding-right: 20px;
   }
 }
-.chronicle h1 {
-  color: #c2dd96;
-}
+
 
 /* Community Carousel Section */
 .community-carousel-section {
