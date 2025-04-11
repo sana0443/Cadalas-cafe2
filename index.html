@@ -2,18 +2,42 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>KADALAS CAFE</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
-    <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
-    <link rel="shortcut icon" href="./favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="Kadalas Cafe" />
-    <link rel="manifest" href="./favicon/site.webmanifest" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <title>Kadalas Cafe </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Welcome to Kadalas Cafe – Coastal charm meets city elegance. Explore our sea view cafe in Kozhikode and our urban-style cafe in Thiruvananthapuram." />
+  <meta name="keywords" content="Kadalas Cafe, Kozhikode cafe, Trivandrum cafe, Sea view cafe, Urban cafe Kerala, Cafes in Kerala, Beach cafe, Coffee shops Kerala" />
+  <meta name="author" content="Kadalas Cafe Team" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://kadalascafe.com" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Kadalas Cafe | Kozhikode Sea View & Trivandrum Urban Cafes" />
+  <meta property="og:description" content="Two locations. One vibe. Kadalas Cafe brings you coastal calm and city energy in Kozhikode and Thiruvananthapuram." />
+  <meta property="og:image" content="https://kadalascafe.com/img/og-home.jpg" />
+  <meta property="og:url" content="https://kadalascafe.com" />
+  <meta property="og:site_name" content="Kadalas Cafe" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kadalas Cafe | Kozhikode Sea View & Trivandrum Urban Cafes" />
+  <meta name="twitter:description" content="Experience Kerala's best cafe scenes – beachside or cityscape – at Kadalas Cafe." />
+  <meta name="twitter:image" content="https://kadalascafe.com/img/og-home.jpg" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+  <link rel="shortcut icon" href="./favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Kadalas Cafe" />
+  <link rel="manifest" href="./favicon/site.webmanifest" />
+  <link href="img/favicon.ico" rel="icon" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
@@ -121,13 +145,13 @@
       <div class="flash-news-container">
         <div class="flash-news-wrapper">
           <div class="flash-news-item active">
-            🎉 Special Offer: 20% Off on Women's day At Trivandrum Cafe
+            🎉 Special Offer: 20% Off for 4+ Ladies Dining In  Monday to Friday, 12 PM - 6 PM At Trivandrum Cafe
           </div>
           <div class="flash-news-item">
-            🎉 Special Offer: 20% Off on Women's day At Trivandrum Cafe
+            🎉 Special Offer: 20% Off for 4+ Ladies Dining In  Monday to Friday, 12 PM - 6 PM At Trivandrum Cafe
           </div>
           <div class="flash-news-item">
-            🎉 Special Offer: 20% Off on Women's day At Trivandrum Cafe
+            🎉 Special Offer: 20% Off for 4+ Ladies Dining In  Monday to Friday, 12 PM - 6 PM At Trivandrum Cafe
           </div>
         </div>
       </div>
@@ -468,14 +492,13 @@
           if (target) {
             setTimeout(() => {
               target.scrollIntoView({ behavior: "smooth" });
-            }, 500); // Delay to allow page load
+            }, 500);
           }
         }
         toggler.addEventListener("click", function () {
           navbarCollapse.classList.toggle("show");
           toggler.classList.toggle("active");
 
-          // Prevent scrolling when the menu is open
           if (navbarCollapse.classList.contains("show")) {
             body.classList.add("no-scroll");
           } else {
@@ -483,7 +506,6 @@
           }
         });
 
-        // Close menu when clicking a link
         document.querySelectorAll(".nav-link").forEach((link) => {
           link.addEventListener("click", function () {
             navbarCollapse.classList.remove("show");
@@ -512,21 +534,18 @@
         function showNextNews() {
           const currentItem = newsItems[newsIndex];
 
-          // Move current item left and fade out
           currentItem.classList.remove("active");
           currentItem.classList.add("exit");
 
-          // Calculate next index
           newsIndex = (newsIndex + 1) % newsItems.length;
           const nextItem = newsItems[newsIndex];
 
-          // Ensure the previous item is fully transitioned out before the next enters
           setTimeout(() => {
-            currentItem.classList.remove("exit"); // Reset exit state
-            nextItem.classList.add("active"); // Move next item into view
+            currentItem.classList.remove("exit"); 
+            nextItem.classList.add("active"); 
             flashNewsContainer.style.backgroundColor =
               backgroundColors[newsIndex];
-          }, 500); // Wait for transition to finish
+          }, 500); 
         }
 
         function changeSlide() {
@@ -553,10 +572,9 @@
           dots[slideIndex].classList.add("active");
         }
 
-        // Start intervals only if elements exist
         if (newsItems.length > 0) {
           setInterval(showNextNews, 3000);
-          flashNewsContainer.style.backgroundColor = backgroundColors[0]; // Set initial background color
+          flashNewsContainer.style.backgroundColor = backgroundColors[0]; 
         }
 
         if (slides.length > 0) setInterval(changeSlide, 2000);
@@ -566,7 +584,7 @@
     <script>
       $(document).ready(function () {
         $(".testimonial-carousel").owlCarousel({
-          loop: true, // Enables infinite looping
+          loop: true, 
           margin: 20, // Space between testimonials
           nav: false, // Hide navigation arrows
           dots: true, // Show dots for navigation
@@ -593,7 +611,6 @@
       $(document).ready(function () {
         let owl = $(".community-carousel");
 
-        // Initialize Owl Carousel
         owl.owlCarousel({
           loop: true,
           margin: 20,
@@ -604,7 +621,7 @@
           autoplaySpeed: 1000,
           autoplayHoverPause: true,
           smartSpeed: 800,
-          navText: ["❮", "❯"], // Custom prev/next buttons
+          navText: ["❮", "❯"], 
           responsive: {
             0: { items: 1 },
             600: { items: 2 },
@@ -612,7 +629,6 @@
           },
         });
 
-        // Thumbnail Click - Jump to Slide in Main Carousel
         $(".thumbnails img").on("click", function () {
           let index = $(this).data("index");
           owl.trigger("to.owl.carousel", [index, 500]);
@@ -625,21 +641,11 @@
     </script>
     <script>
       function downloadPDF(pdfPath) {
-        window.open(pdfPath, "_blank"); // Opens the PDF in a new tab
+        window.open(pdfPath, "_blank"); 
       }
     </script>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+   
     <!-- Owl Carousel JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 

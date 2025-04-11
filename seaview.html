@@ -2,24 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Kadalas Cafe</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
+    <title>Kadalas Cafe | Sea View Cafe in Kozhikode</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Kadalas Cafe – A charming sea view cafe in Kozhikode, offering coastal cuisine, rich coffee, and a breezy ambiance by the beach." />
+    <meta name="keywords" content="Kadalas Cafe, Kozhikode Cafe, Sea view cafe Kozhikode, Beachside cafe, Coffee by the sea, Kerala cafe, Kozhikode restaurants" />
+    <meta name="author" content="Kadalas Cafe Team" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://kadalascafe.com/kozhikode" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Kadalas Cafe | Sea View Cafe in Kozhikode" />
+    <meta property="og:description" content="Enjoy beachside vibes and flavorful bites at Kadalas Cafe in Kozhikode." />
+    <meta property="og:image" content="https://kadalascafe.com/img/og-kozhikode.jpg" />
+    <meta property="og:url" content="https://kadalascafe.com/kozhikode" />
+    <meta property="og:site_name" content="Kadalas Cafe" />
+
+
+    <!-- Favicons -->
     <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
     <link rel="shortcut icon" href="./favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Kadalas Cafe" />
     <link rel="manifest" href="./favicon/site.webmanifest" />
-    <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon" />
 
-    <!-- Google Web Fonts -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!-- Icon Font Stylesheet -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
       rel="stylesheet"
@@ -29,7 +43,6 @@
       rel="stylesheet"
     />
 
-    <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet" />
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
     <link
@@ -37,10 +50,8 @@
       rel="stylesheet"
     />
 
-    <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
   </head>
 
@@ -344,14 +355,13 @@
           if (target) {
             setTimeout(() => {
               target.scrollIntoView({ behavior: "smooth" });
-            }, 500); // Delay to allow page load
+            }, 500);
           }
         }
         toggler.addEventListener("click", function () {
           navbarCollapse.classList.toggle("show");
           toggler.classList.toggle("active");
 
-          // Prevent scrolling when the menu is open
           if (navbarCollapse.classList.contains("show")) {
             body.classList.add("no-scroll");
           } else {
@@ -359,7 +369,6 @@
           }
         });
 
-        // Close menu when clicking a link
         document.querySelectorAll(".nav-link").forEach((link) => {
           link.addEventListener("click", function () {
             navbarCollapse.classList.remove("show");
@@ -372,17 +381,8 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-    <!-- Owl Carousel JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+   
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
