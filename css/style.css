@@ -542,6 +542,9 @@ h1 {
   .button-container {
     justify-content: start !important;
   }
+  .chronicle-text-container {
+    height: 270px !important;
+  }
 }
 
 .chronicle-image-container {
@@ -563,7 +566,7 @@ p {
   object-fit: cover;
 }
 .chronicle-text-container {
-  height: 260px;
+  height: 190px;
 }
 
 .plr {
