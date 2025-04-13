@@ -546,6 +546,15 @@ h1 {
   .chronicle-text-container {
     height: 260px !important;
   }
+  .image-collage img:nth-child(2) {
+    height: 385px !important;
+  }
+  
+  .image-collage img:nth-child(3),
+  .image-collage img:nth-child(4) {
+    height: 190px !important;
+  }
+  
 }
 
 .chronicle-image-container {
