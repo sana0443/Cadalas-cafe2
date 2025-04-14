@@ -141,9 +141,7 @@ body.no-scroll {
 }
 
 .community,
-.moments {
-  overflow: hidden;
-}
+.moments,
 .main {
   overflow: hidden;
 }
@@ -174,7 +172,6 @@ body.no-scroll {
   background-size: 70% 70%;
 }
 
-/* Full background overlay */
 .carousel-slide::before {
   content: "";
   position: absolute;
@@ -245,24 +242,10 @@ body.no-scroll {
   width: 100%;
 }
 
-.flash-news-container {
-  width: 100%;
-  padding: 10px 0;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #333;
-}
 .logo2 {
   width: 20%;
   text-align: start;
 }
-
 /* News Item */
 .flash-news-item {
   position: absolute;
@@ -281,13 +264,11 @@ body.no-scroll {
   transition: transform 1s ease-in-out, opacity 0.8s ease-in-out;
 }
 
-/* Active item - Moves into view from right */
 .flash-news-item.active {
   opacity: 1;
   transform: translateX(0);
 }
 
-/* Exiting item - Moves out to the left */
 .flash-news-item.exit {
   transform: translateX(-100%);
   opacity: 0;
@@ -378,10 +359,6 @@ body.no-scroll {
   width: 90% !important;
 }
 
-.overlay-button:hover {
-  background: #11aeb1;
-}
-
 h1 {
   font-size: 2.3rem;
   font-weight: 500;
@@ -439,8 +416,6 @@ h1 {
   .navbar {
     background: transparent !important;
   }
-
-  /* Full-screen collapse menu */
   .navbar-collapse {
     position: fixed;
     top: 0;
@@ -473,8 +448,6 @@ h1 {
     padding: 10px 0;
   }
 
-  /* Move Menu button to the bottom */
-
   .menu-btn {
     width: 200px !important;
     text-align: center;
@@ -495,8 +468,6 @@ h1 {
     font-size: 20px;
     font-weight: bold;
   }
-
-  /* Navbar Toggler */
   .navbar-toggler {
     border: none;
     background: none;
@@ -508,23 +479,17 @@ h1 {
     right: 40px;
     top: 15px;
   }
-
-  /* Ensure proper icon transition */
   .navbar-toggler i {
     transition: transform 0.3s ease-in-out;
     position: absolute;
   }
-
   .navbar-toggler .fa-bars {
     display: block;
     z-index: 2 !important;
   }
-
   .navbar-toggler .fa-times {
     display: none;
   }
-
-  /* When toggler is active, switch icons */
   .navbar-toggler.active .fa-bars {
     display: none;
   }
@@ -535,8 +500,6 @@ h1 {
 
     z-index: 100 !important;
   }
-
-  /* Brand logo */
   .navbar-brand img {
     max-height: 50px;
   }
@@ -549,12 +512,11 @@ h1 {
   .image-collage img:nth-child(2) {
     height: 385px !important;
   }
-  
+
   .image-collage img:nth-child(3),
   .image-collage img:nth-child(4) {
     height: 190px !important;
   }
-  
 }
 
 .chronicle-image-container {
@@ -625,7 +587,6 @@ p {
   padding: 0px;
 }
 
-/* Improved Owl Carousel Navigation */
 .community-carousel .owl-nav {
   position: absolute;
   top: 50%;
